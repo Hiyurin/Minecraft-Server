@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 42.118.12.87
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1720839996204
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1720840359266
+  login: 1720838649705
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1720840187703
+money: '0.0'
+last-account-name: .Thanhtopbeat
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 111.15302
+  y: 39.0
+  z: 188.30001
+  yaw: 52.074554443359375
+  pitch: 63.98454284667969
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 136.30001
+  y: 66.27512
+  z: 188.69999
+  yaw: -118.44673156738281
+  pitch: -19.759017944335938

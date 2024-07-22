@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 125.235.236.110
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1720525832009
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1720525881000
+  login: 1720521035999
+money: '0.0'
+last-account-name: OsamuKenta
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: -324.4621100338146
+  y: -25.0
+  z: -49.603918048715165
+  yaw: -176.8519744873047
+  pitch: -4.649814128875732
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: -246.6003065435791
+  y: 8.0
+  z: 92.90509258311776
+  yaw: 50.2576904296875
+  pitch: 9.599574089050293

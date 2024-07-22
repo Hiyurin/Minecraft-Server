@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 14.231.198.104
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1721098899379
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1721115096823
+  login: 1721114425479
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1721098925144
+money: '500.0'
+last-account-name: cwp1dd
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: -142.72498370121386
+  y: 72.79673560066871
+  z: 13.95681914962206
+  yaw: -43.84510040283203
+  pitch: 20.963529586791992
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: -142.72498370121386
+  y: 72.79673560066871
+  z: 13.95681914962206
+  yaw: -43.84510040283203
+  pitch: 20.963529586791992

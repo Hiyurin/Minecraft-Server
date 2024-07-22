@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 14.186.37.31
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1720782748254
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1721036356211
+  login: 1721035849576
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1721035913214
+money: '500.0'
+last-account-name: Minh_Chill
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 7091.348571525277
+  y: 61.505888759478786
+  z: -1980.274055649247
+  yaw: -107.85813903808594
+  pitch: 21.810319900512695
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 7112.00030831364
+  y: 80.0
+  z: -1987.3315795452206
+  yaw: -79.16741943359375
+  pitch: 26.097990036010742

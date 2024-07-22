@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 104.28.254.76
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1721319674982
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1721322161591
+  login: 1721316926632
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1721321973011
+money: '500.0'
+last-account-name: Texture2k4
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 468.03495297592696
+  y: 97.0
+  z: -776.0340768758175
+  yaw: 171.64382934570312
+  pitch: 55.47599792480469
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 467.5179441744711
+  y: 72.0
+  z: -780.9175623240147
+  yaw: -170.82373046875
+  pitch: 76.8425064086914

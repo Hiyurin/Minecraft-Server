@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 171.243.60.255
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1721100527302
+  login: 1721099849873
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1721100551168
+money: '0.0'
+last-account-name: TORI_KAMARU
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 117.33814265777052
+  y: 72.0
+  z: 147.45515687256426
+  yaw: 79.79852294921875
+  pitch: 16.447097778320312
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: -204.01959359094005
+  y: 100.0
+  z: -290.36394356100783
+  yaw: 82.75137329101562
+  pitch: 4.188313007354736

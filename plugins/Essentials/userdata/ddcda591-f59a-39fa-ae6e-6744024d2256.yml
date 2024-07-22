@@ -1,0 +1,33 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 183.81.47.229
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1721214621931
+  login: 1721214103188
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1721214302768
+money: '500.0'
+last-account-name: Danny
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 179.61416140597055
+  y: 62.9375
+  z: 24.72290789658703
+  yaw: 112.8001708984375
+  pitch: 10.349968910217285

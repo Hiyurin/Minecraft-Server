@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 116.99.253.170
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1721194440956
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1721195611414
+  login: 1721193196406
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1721194467084
+money: '0.0'
+last-account-name: kamikazeshin
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 4587.874101762198
+  y: 71.0
+  z: -581.7278858138843
+  yaw: 99.84870147705078
+  pitch: 10.163141250610352
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 6632.21485267095
+  y: 102.0
+  z: -1060.4780035122756
+  yaw: -18.454753875732422
+  pitch: -90.0

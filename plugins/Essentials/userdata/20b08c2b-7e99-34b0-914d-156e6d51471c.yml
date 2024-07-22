@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 14.231.198.104
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1720955844496
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1721097780592
+  login: 1721097752323
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1720956069782
+money: '0.0'
+last-account-name: kittyxzowq
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: -112.69999998807907
+  y: 70.0
+  z: 21.63262577394118
+  yaw: 17.44525146484375
+  pitch: 26.58795738220215
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 174.23131111462072
+  y: 65.0
+  z: 35.69999998807907
+  yaw: -149.4562225341797
+  pitch: 59.44877243041992

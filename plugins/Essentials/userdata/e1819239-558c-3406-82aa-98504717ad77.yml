@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 42.114.26.250
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1720665941819
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1720666671886
+  login: 1720665582789
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1720665943791
+money: '0.0'
+last-account-name: minh666
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 1231.5955613104668
+  y: 15.0
+  z: -420.34245861883807
+  yaw: 57.33935546875
+  pitch: 23.250120162963867
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 19.5
+  y: 64.0
+  z: 11.5
+  yaw: -7.350003719329834
+  pitch: 9.899998664855957

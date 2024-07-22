@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 14.173.238.200
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1720519776410
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1720519855803
+  login: 1720519593658
+money: '0.0'
+last-account-name: Shiro
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 17.5
+  y: 64.0
+  z: 7.5
+  yaw: 61.26993179321289
+  pitch: 14.371955871582031
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: -56.61669185788961
+  y: 69.0
+  z: -336.18926901066783
+  yaw: 155.710693359375
+  pitch: -9.455157279968262

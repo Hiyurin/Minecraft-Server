@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 58.187.248.221
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1721220169355
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1721232126753
+  login: 1721229978198
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1721220196321
+money: '500.0'
+last-account-name: __Fireflyy__
+lastlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 5207.018715986592
+  y: 19.0
+  z: 5397.968610041423
+  yaw: -87.6019287109375
+  pitch: 35.216182708740234
+logoutlocation:
+  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world-name: world
+  x: 5366.1795457973185
+  y: 64.0
+  z: 5384.497028727304
+  yaw: -85.950927734375
+  pitch: 36.15013122558594
