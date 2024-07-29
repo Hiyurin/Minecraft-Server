@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 14.163.109.71
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1722240542111
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1722238033115
+  login: 1722238255216
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1722240707411
+money: '0'
+last-account-name: BrSmoky
+logoutlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: -42.753211960591194
+  y: 68.0
+  z: 13.312267076960719
+  yaw: 116.69995880126953
+  pitch: 13.799935340881348
+lastlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: 344.978178796169
+  y: 69.0
+  z: 31.65222822361827
+  yaw: -145.949462890625
+  pitch: 7.649825572967529

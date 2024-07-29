@@ -1,0 +1,237 @@
+[Sun 10:26:20 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.event.bus.EventBusImpl subscribed
+[Sun 10:26:20 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.module.ModuleManager subscribed
+[Sun 10:26:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.discord.connection.jda.JDAConnectionManager subscribed
+[Sun 10:26:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.update.UpdateChecker subscribed
+[Sun 10:26:21 UTC] [WARNING] 
+[Sun 10:26:21 UTC] [WARNING] +-----------------------------------------+
+[Sun 10:26:21 UTC] [WARNING] This is a testing version of DiscordSRV
+[Sun 10:26:21 UTC] [WARNING] Limited or no support will be provided
+[Sun 10:26:21 UTC] [WARNING] EVERYTHING is subject to change.
+[Sun 10:26:21 UTC] [WARNING] +-----------------------------------------+
+[Sun 10:26:21 UTC] [WARNING] 
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule registered
+[Sun 10:26:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule subscribed
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule enabled
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.ban.BukkitBanModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.VaultIntegration registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.PlaceholderAPIIntegration registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.EssentialsXIntegration registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.ChattyChatIntegration registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.GriefPreventionChatIntegration registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.LunaChatIntegration registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] Failed to load integration: com.discordsrv.bukkit.integration.chat.McMMOChatIntegration (Integration likely not installed or using wrong version)
+java.lang.NoClassDefFoundError: com/gmail/nossr50/mcmmo/kyori/adventure/text/Component
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:421)
+	at java.base/java.lang.Class.forName(Class.java:412)
+	at com.discordsrv.common.AbstractDiscordSRV.registerIntegration(AbstractDiscordSRV.java:445)
+	at com.discordsrv.bukkit.BukkitDiscordSRV.enable(BukkitDiscordSRV.java:207)
+	at com.discordsrv.common.AbstractDiscordSRV.runEnable(AbstractDiscordSRV.java:535)
+	at com.discordsrv.common.bootstrap.LifecycleManager.loadAndEnable(LifecycleManager.java:72)
+	at com.discordsrv.bukkit.DiscordSRVBukkitBootstrap.onEnable(DiscordSRVBukkitBootstrap.java:70)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at DiscordSRV-Bukkit-3.0.0-SNAPSHOT-8077555.jar//com.discordsrv.dependencies.dev.vankka.mcdependencydownload.bukkit.loader.BukkitLoader.onEnable(BukkitLoader.java:79)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288)
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202)
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:632)
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:581)
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:287)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1218)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:350)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: com.gmail.nossr50.mcmmo.kyori.adventure.text.Component
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 20 more
+
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.TownyChatIntegration registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.VentureChatIntegration registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.bansync.BanSyncModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.console.ConsoleModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.ChannelLockingModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.TimedUpdaterModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.discord.DiscordCommandModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.game.GameCommandModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.GlobalChannelLookupModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.discord.api.DiscordAPIEventModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.groupsync.GroupSyncModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.JoinMessageModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.LeaveMessageModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.invite.DiscordInviteModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.LinkingModule registered
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.presence.PresenceUpdaterModule registered
+[Sun 10:26:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.presence.PresenceUpdaterModule subscribed
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.presence.PresenceUpdaterModule enabled
+[Sun 10:26:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.integration.LuckPermsIntegration registered
+[Sun 10:26:23 UTC] [DEBUG] [MODULE_MANAGER] Reloading modules (DiscordSRV ready = false)
+[Sun 10:26:23 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule unsubscribed
+[Sun 10:26:23 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule disabled
+[Sun 10:26:23 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.console.ConsoleModule subscribed
+[Sun 10:26:23 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.console.ConsoleModule enabled
+[Sun 10:26:23 UTC] [DEBUG] [CONSOLE] Skipping a console handler due to lack of channel
+[Sun 10:26:23 UTC] [DEBUG] [CONSOLE] 0 console handlers active
+[Sun 10:26:24 UTC] [WARNING] [UPDATES] DiscordSRV is outdated by 3 builds. Get the latest version from -
+[Sun 10:26:24 UTC] [INFO] Using H2 as storage
+[Sun 10:26:25 UTC] [INFO] Storage connection successfully established
+[Sun 10:26:25 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.impl.StorageLinker subscribed
+[Sun 10:26:25 UTC] [INFO] Using storage for linked accounts
+[Sun 10:26:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa42bdb68571108-HKG]
+[Sun 10:26:30 UTC] [DEBUG] [JDA] Caching bucket hash GET/users/@me -> 78bb8553d9352a5a2f89f9def401287a
+[Sun 10:26:30 UTC] [INFO] [JDA] Login Successful!
+[Sun 10:26:30 UTC] [DEBUG] [JDA] Creating new worker handle for shard pool 0
+[Sun 10:26:30 UTC] [DEBUG] [JDA] Running worker
+[Sun 10:26:30 UTC] [DEBUG] [JDA] Running connect node for shard JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[Sun 10:26:35 UTC] [INFO] [JDA] Connected to WebSocket
+[Sun 10:26:35 UTC] [DEBUG] [JDA] Connected with gateway intents: 1000001001000011
+[Sun 10:26:35 UTC] [DEBUG] [JDA] Sending Identify-packet...
+[Sun 10:26:35 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Sun 10:26:35 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Custom Status","state":"Starting...","type":4}],"afk":false,"since":1722162395064,"status":"dnd"}}
+[Sun 10:26:35 UTC] [DEBUG] [JDA] Setting incomplete count to 2
+[Sun 10:26:35 UTC] [DEBUG] [JDA] Starting 75 second timeout for 2 guilds
+[Sun 10:26:35 UTC] [DEBUG] [JDA] Sending chunking requests for 1 guilds
+[Sun 10:26:35 UTC] [DEBUG] [JDA] Sending chunking requests for 1 guilds
+[Sun 10:26:35 UTC] [DEBUG] [JDA] Sending chunk/sync request {"query":"","guild_id":1243911654287085669,"limit":0}
+[Sun 10:26:35 UTC] [DEBUG] [JDA] Sending chunk/sync request {"query":"","guild_id":1053873232907862106,"limit":0}
+[Sun 10:26:36 UTC] [DEBUG] [JDA] Received member chunk for guild id: 1243911654287085669 size: 49 index: 0/1
+[Sun 10:26:36 UTC] [DEBUG] [JDA] Finished setup for guild 1243911654287085669 firing cached events 0
+[Sun 10:26:36 UTC] [DEBUG] [JDA] Received member chunk for guild id: 1053873232907862106 size: 1000 index: 0/2
+[Sun 10:26:36 UTC] [DEBUG] [JDA] Received member chunk for guild id: 1053873232907862106 size: 291 index: 1/2
+[Sun 10:26:36 UTC] [INFO] [JDA] Finished Loading!
+[Sun 10:26:36 UTC] [DEBUG] [JDA] Finished setup for guild 1053873232907862106 firing cached events 0
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] Reloading modules (DiscordSRV ready = true)
+[Sun 10:26:36 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule subscribed
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule enabled
+[Sun 10:26:36 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType subscribed
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType enabled
+[Sun 10:26:36 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType subscribed
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType enabled
+[Sun 10:26:36 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType subscribed
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType enabled
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.ban.BukkitBanModule enabled
+[Sun 10:26:36 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.integration.PlaceholderAPIIntegration subscribed
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.PlaceholderAPIIntegration enabled
+[Sun 10:26:36 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.integration.EssentialsXIntegration subscribed
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.EssentialsXIntegration enabled
+[Sun 10:26:36 UTC] [DEBUG] [CONSOLE] Skipping a console handler due to lack of channel
+[Sun 10:26:36 UTC] [DEBUG] [CONSOLE] 0 console handlers active
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.ChannelLockingModule enabled
+[Sun 10:26:36 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.command.discord.DiscordCommandModule subscribed
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.discord.DiscordCommandModule enabled
+[Sun 10:26:36 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.game.GameCommandModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [COMMAND_HANDLER] Registering command discordsrv with commodore
+[Sun 10:26:37 UTC] [DEBUG] [COMMAND_HANDLER] PluginCommand available for "discordsrv"
+[Sun 10:26:37 UTC] [DEBUG] [COMMAND_HANDLER] Registering command discord with commodore
+[Sun 10:26:37 UTC] [DEBUG] [COMMAND_HANDLER] Registered command "discord" in CommandMap successfully
+[Sun 10:26:37 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.channel.GlobalChannelLookupModule subscribed
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.GlobalChannelLookupModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [TRANSLATION_LOADER] Found 6770 Minecraft translations for en_us
+[Sun 10:26:37 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.discord.api.DiscordAPIEventModule subscribed
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.discord.api.DiscordAPIEventModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule subscribed
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.AwardMessageModule registered
+[Sun 10:26:37 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.AwardMessageModule subscribed
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.AwardMessageModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.DeathMessageModule registered
+[Sun 10:26:37 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.DeathMessageModule subscribed
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.DeathMessageModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule subscribed
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.JoinMessageModule subscribed
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.JoinMessageModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.LeaveMessageModule subscribed
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.LeaveMessageModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.invite.DiscordInviteModule subscribed
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.invite.DiscordInviteModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [INVITE] Bot is in 2 servers, not automatically determining invites
+[Sun 10:26:37 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule subscribed
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.LinkingModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.integration.LuckPermsIntegration enabled
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] Enabling modules (DiscordSRV ready = true)
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StartMessageModule registered
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StartMessageModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StopMessageModule registered
+[Sun 10:26:37 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StopMessageModule enabled
+[Sun 10:26:37 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Custom Status","state":"Starting...","type":4}],"afk":false,"since":1722162397028,"status":"dnd"}}
+[Sun 10:26:37 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722162397090,"status":"online"}}
+[Sun 10:26:37 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa42c05fcb91108-HKG]
+[Sun 10:26:37 UTC] [DEBUG] [JDA] Caching bucket hash POST/channels/{channel_id}/messages -> 3df15bae86f6647dd4dfcbd5c6949480
+[Sun 10:26:56 UTC] [DEBUG] [JDA] Removed 4 expired buckets
+[Sun 10:30:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa431054dc6b441-HKG]
+[Sun 10:30:26 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 10:32:42 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa434edde2c853f-HKG]
+[Sun 10:32:42 UTC] [DEBUG] [JDA] Caching bucket hash GET/channels/{channel_id}/webhooks -> a5823fec22cce7359b3a2bc470f87f64
+[Sun 10:32:42 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa434f03aea853f-HKG]
+[Sun 10:32:42 UTC] [DEBUG] [JDA] Caching bucket hash POST/webhooks/{webhook_id}/{token} -> 3d2712a9e4fe17cc9d3fed4a8e672e5f
+[Sun 10:32:56 UTC] [DEBUG] [JDA] Removed 4 expired buckets
+[Sun 10:36:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa43a8f184210a6-HKG]
+[Sun 10:36:56 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 10:37:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa43c0bffc30fc0-HKG]
+[Sun 10:37:56 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 10:43:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4441e8ef8849a-HKG]
+[Sun 10:43:26 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 10:44:13 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa445cbed7220fc-HKG]
+[Sun 10:44:24 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4460f198e1063-HKG]
+[Sun 10:44:26 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 10:59:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa45c17bd328475-HKG]
+[Sun 10:59:56 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType disabled
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.ban.BukkitBanModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.integration.PlaceholderAPIIntegration unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.PlaceholderAPIIntegration disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.integration.EssentialsXIntegration unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.EssentialsXIntegration disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.console.ConsoleModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.console.ConsoleModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.command.discord.DiscordCommandModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.discord.DiscordCommandModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.game.GameCommandModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.channel.GlobalChannelLookupModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.GlobalChannelLookupModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.discord.api.DiscordAPIEventModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.discord.api.DiscordAPIEventModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.JoinMessageModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.JoinMessageModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.LeaveMessageModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.LeaveMessageModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.invite.DiscordInviteModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.invite.DiscordInviteModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.LinkingModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.presence.PresenceUpdaterModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.presence.PresenceUpdaterModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.integration.LuckPermsIntegration disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.AwardMessageModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.AwardMessageModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.DeathMessageModule unsubscribed
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.DeathMessageModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StartMessageModule disabled
+[Sun 11:34:54 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Custom Status","state":"Stopping...","type":4}],"afk":false,"since":1722166494407,"status":"idle"}}
+[Sun 11:34:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4900f89a20ee0-HKG]
+[Sun 11:34:55 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StopMessageModule disabled
+[Sun 11:34:55 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.ChannelLockingModule disabled
+[Sun 11:34:55 UTC] [INFO] Waiting up to 10 seconds for JDA to shutdown...
+[Sun 11:34:56 UTC] [DEBUG] [JDA] Removed 1 expired buckets

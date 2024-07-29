@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 58.187.57.59
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1722180695254
+  login: 1722180233304
+money: '0'
+last-account-name: Pieck_68
+logoutlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: 13.557959178794775
+  y: 70.0
+  z: -13.218190169780497
+  yaw: 0.516815185546875
+  pitch: 44.612056732177734

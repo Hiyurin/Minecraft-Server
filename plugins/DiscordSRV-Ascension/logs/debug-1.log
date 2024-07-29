@@ -1,0 +1,1183 @@
+[Sun 13:58:23 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.event.bus.EventBusImpl subscribed
+[Sun 13:58:23 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.module.ModuleManager subscribed
+[Sun 13:58:23 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.discord.connection.jda.JDAConnectionManager subscribed
+[Sun 13:58:24 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.update.UpdateChecker subscribed
+[Sun 13:58:24 UTC] [WARNING] 
+[Sun 13:58:24 UTC] [WARNING] +-----------------------------------------+
+[Sun 13:58:24 UTC] [WARNING] This is a testing version of DiscordSRV
+[Sun 13:58:24 UTC] [WARNING] Limited or no support will be provided
+[Sun 13:58:24 UTC] [WARNING] EVERYTHING is subject to change.
+[Sun 13:58:24 UTC] [WARNING] +-----------------------------------------+
+[Sun 13:58:24 UTC] [WARNING] 
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule registered
+[Sun 13:58:24 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule subscribed
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule enabled
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.ban.BukkitBanModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.VaultIntegration registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.PlaceholderAPIIntegration registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.EssentialsXIntegration registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.ChattyChatIntegration registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.GriefPreventionChatIntegration registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.LunaChatIntegration registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] Failed to load integration: com.discordsrv.bukkit.integration.chat.McMMOChatIntegration (Integration likely not installed or using wrong version)
+java.lang.NoClassDefFoundError: com/gmail/nossr50/mcmmo/kyori/adventure/text/Component
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:421)
+	at java.base/java.lang.Class.forName(Class.java:412)
+	at com.discordsrv.common.AbstractDiscordSRV.registerIntegration(AbstractDiscordSRV.java:445)
+	at com.discordsrv.bukkit.BukkitDiscordSRV.enable(BukkitDiscordSRV.java:207)
+	at com.discordsrv.common.AbstractDiscordSRV.runEnable(AbstractDiscordSRV.java:535)
+	at com.discordsrv.common.bootstrap.LifecycleManager.loadAndEnable(LifecycleManager.java:72)
+	at com.discordsrv.bukkit.DiscordSRVBukkitBootstrap.onEnable(DiscordSRVBukkitBootstrap.java:70)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at DiscordSRV-Bukkit-3.0.0-SNAPSHOT-8077555.jar//com.discordsrv.dependencies.dev.vankka.mcdependencydownload.bukkit.loader.BukkitLoader.onEnable(BukkitLoader.java:79)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288)
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202)
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:632)
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:581)
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:287)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1218)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:350)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: com.gmail.nossr50.mcmmo.kyori.adventure.text.Component
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 20 more
+
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.TownyChatIntegration registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.VentureChatIntegration registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.bansync.BanSyncModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.console.ConsoleModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.ChannelLockingModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.TimedUpdaterModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.discord.DiscordCommandModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.game.GameCommandModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.GlobalChannelLookupModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.discord.api.DiscordAPIEventModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.groupsync.GroupSyncModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.JoinMessageModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.LeaveMessageModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.invite.DiscordInviteModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.LinkingModule registered
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.presence.PresenceUpdaterModule registered
+[Sun 13:58:24 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.presence.PresenceUpdaterModule subscribed
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.presence.PresenceUpdaterModule enabled
+[Sun 13:58:24 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.integration.LuckPermsIntegration registered
+[Sun 13:58:25 UTC] [DEBUG] [MODULE_MANAGER] Reloading modules (DiscordSRV ready = false)
+[Sun 13:58:25 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule unsubscribed
+[Sun 13:58:25 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule disabled
+[Sun 13:58:25 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.console.ConsoleModule subscribed
+[Sun 13:58:25 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.console.ConsoleModule enabled
+[Sun 13:58:25 UTC] [DEBUG] [CONSOLE] Skipping a console handler due to lack of channel
+[Sun 13:58:25 UTC] [DEBUG] [CONSOLE] 0 console handlers active
+[Sun 13:58:34 UTC] [WARNING] [UPDATES] DiscordSRV is outdated by 3 builds. Get the latest version from -
+[Sun 13:58:34 UTC] [INFO] Using H2 as storage
+[Sun 13:58:35 UTC] [INFO] Storage connection successfully established
+[Sun 13:58:35 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.impl.StorageLinker subscribed
+[Sun 13:58:35 UTC] [INFO] Using storage for linked accounts
+[Sun 13:58:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa562a30b4384eb-HKG]
+[Sun 13:58:40 UTC] [DEBUG] [JDA] Caching bucket hash GET/users/@me -> 78bb8553d9352a5a2f89f9def401287a
+[Sun 13:58:40 UTC] [INFO] [JDA] Login Successful!
+[Sun 13:58:40 UTC] [DEBUG] [JDA] Creating new worker handle for shard pool 0
+[Sun 13:58:40 UTC] [DEBUG] [JDA] Running worker
+[Sun 13:58:40 UTC] [DEBUG] [JDA] Running connect node for shard JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[Sun 13:58:40 UTC] [INFO] [JDA] Connected to WebSocket
+[Sun 13:58:40 UTC] [DEBUG] [JDA] Connected with gateway intents: 1000001001000011
+[Sun 13:58:40 UTC] [DEBUG] [JDA] Sending Identify-packet...
+[Sun 13:58:40 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Sun 13:58:41 UTC] [DEBUG] [JDA] Setting incomplete count to 2
+[Sun 13:58:41 UTC] [DEBUG] [JDA] Starting 75 second timeout for 2 guilds
+[Sun 13:58:41 UTC] [DEBUG] [JDA] Sending chunking requests for 1 guilds
+[Sun 13:58:41 UTC] [DEBUG] [JDA] Sending chunk/sync request {"query":"","guild_id":1243911654287085669,"limit":0}
+[Sun 13:58:41 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Custom Status","state":"Starting...","type":4}],"afk":false,"since":1722175120950,"status":"dnd"}}
+[Sun 13:58:41 UTC] [DEBUG] [JDA] Sending chunking requests for 1 guilds
+[Sun 13:58:41 UTC] [DEBUG] [JDA] Received member chunk for guild id: 1243911654287085669 size: 49 index: 0/1
+[Sun 13:58:41 UTC] [DEBUG] [JDA] Finished setup for guild 1243911654287085669 firing cached events 0
+[Sun 13:58:41 UTC] [DEBUG] [JDA] Sending chunk/sync request {"query":"","guild_id":1053873232907862106,"limit":0}
+[Sun 13:58:42 UTC] [DEBUG] [JDA] Received member chunk for guild id: 1053873232907862106 size: 1000 index: 0/2
+[Sun 13:58:42 UTC] [DEBUG] [JDA] Received member chunk for guild id: 1053873232907862106 size: 291 index: 1/2
+[Sun 13:58:42 UTC] [INFO] [JDA] Finished Loading!
+[Sun 13:58:42 UTC] [DEBUG] [JDA] Finished setup for guild 1053873232907862106 firing cached events 0
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] Reloading modules (DiscordSRV ready = true)
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType enabled
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.ban.BukkitBanModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.VaultIntegration enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.integration.PlaceholderAPIIntegration subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.PlaceholderAPIIntegration enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.integration.EssentialsXIntegration subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.EssentialsXIntegration enabled
+[Sun 13:58:42 UTC] [DEBUG] [CONSOLE] Skipping a console handler due to lack of channel
+[Sun 13:58:42 UTC] [DEBUG] [CONSOLE] 0 console handlers active
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.ChannelLockingModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.command.discord.DiscordCommandModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.discord.DiscordCommandModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.game.GameCommandModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [COMMAND_HANDLER] Registering command discordsrv with commodore
+[Sun 13:58:42 UTC] [DEBUG] [COMMAND_HANDLER] PluginCommand available for "discordsrv"
+[Sun 13:58:42 UTC] [DEBUG] [COMMAND_HANDLER] Registering command discord with commodore
+[Sun 13:58:42 UTC] [DEBUG] [COMMAND_HANDLER] Registered command "discord" in CommandMap successfully
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.channel.GlobalChannelLookupModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.GlobalChannelLookupModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.discord.api.DiscordAPIEventModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.discord.api.DiscordAPIEventModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.JoinMessageModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.JoinMessageModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.LeaveMessageModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.LeaveMessageModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.invite.DiscordInviteModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.invite.DiscordInviteModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [INVITE] Bot is in 2 servers, not automatically determining invites
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.LinkingModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.integration.LuckPermsIntegration enabled
+[Sun 13:58:42 UTC] [DEBUG] [TRANSLATION_LOADER] Found 6770 Minecraft translations for en_us
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.AwardMessageModule registered
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.AwardMessageModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.AwardMessageModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.DeathMessageModule registered
+[Sun 13:58:42 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.DeathMessageModule subscribed
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.DeathMessageModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] Enabling modules (DiscordSRV ready = true)
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StartMessageModule registered
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StartMessageModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StopMessageModule registered
+[Sun 13:58:42 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StopMessageModule enabled
+[Sun 13:58:42 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Custom Status","state":"Starting...","type":4}],"afk":false,"since":1722175122538,"status":"dnd"}}
+[Sun 13:58:42 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722175122628,"status":"online"}}
+[Sun 13:58:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa562b49b4d84eb-HKG]
+[Sun 13:58:43 UTC] [DEBUG] [JDA] Caching bucket hash POST/channels/{channel_id}/messages -> 3df15bae86f6647dd4dfcbd5c6949480
+[Sun 13:59:05 UTC] [DEBUG] [JDA] Removed 4 expired buckets
+[Sun 13:59:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa563d1debf84f0-HKG]
+[Sun 13:59:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:00:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56544991e04bb-HKG]
+[Sun 14:00:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:01:06 UTC] [INFO] [JOIN_MESSAGES] Inyrin is joining silently, join message will not be sent
+[Sun 14:01:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa566b80a028576-HKG]
+[Sun 14:01:27 UTC] [DEBUG] [JDA] Caching bucket hash GET/channels/{channel_id}/webhooks -> a5823fec22cce7359b3a2bc470f87f64
+[Sun 14:01:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa566babe5d8576-HKG]
+[Sun 14:01:27 UTC] [DEBUG] [JDA] Caching bucket hash POST/webhooks/{webhook_id}/{token} -> 3d2712a9e4fe17cc9d3fed4a8e672e5f
+[Sun 14:01:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa566c1cc0b8576-HKG]
+[Sun 14:01:35 UTC] [DEBUG] [JDA] Removed 5 expired buckets
+[Sun 14:01:37 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa566f71fc58576-HKG]
+[Sun 14:02:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:02:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa568a4aa39042c-HKG]
+[Sun 14:03:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:04:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56bb57b0f5e07-HKG]
+[Sun 14:05:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:05:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56c53bf095dfa-HKG]
+[Sun 14:05:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56c8559025dfa-HKG]
+[Sun 14:05:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56ca799ab5dfa-HKG]
+[Sun 14:05:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:05:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56d57acf7043f-HKG]
+[Sun 14:06:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:06:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56e044a2521d6-HKG]
+[Sun 14:06:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:06:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56e51387084ff-HKG]
+[Sun 14:06:45 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56e7aaac484ff-HKG]
+[Sun 14:07:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:07:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56fc7af7884cc-HKG]
+[Sun 14:07:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa56fcabcdd84cc-HKG]
+[Sun 14:08:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:09:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57331781f8529-HKG]
+[Sun 14:10:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa573471f108529-HKG]
+[Sun 14:10:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57356bd618529-HKG]
+[Sun 14:10:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:10:16 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa573a249f10501-HKG]
+[Sun 14:10:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa573e698db0503-HKG]
+[Sun 14:10:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:10:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa574800f4284c3-HKG]
+[Sun 14:10:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57482dcd784c3-HKG]
+[Sun 14:11:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:12:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5772bfa80847f-HKG]
+[Sun 14:12:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa577800aaa22f0-HKG]
+[Sun 14:13:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:13:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa577d28ea35161-HKG]
+[Sun 14:13:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:14:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57a5fdf348527-HKG]
+[Sun 14:14:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57a8b1b1f8527-HKG]
+[Sun 14:15:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:15:05 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57ab3df538527-HKG]
+[Sun 14:15:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57b1dab51861c-HKG]
+[Sun 14:15:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57b42aeb6861c-HKG]
+[Sun 14:15:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57b4daa44861c-HKG]
+[Sun 14:15:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:15:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57b911af084e8-HKG]
+[Sun 14:15:44 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57ba5dfe284e8-HKG]
+[Sun 14:15:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57bdd0bd584e8-HKG]
+[Sun 14:15:57 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57bf5fe1584e8-HKG]
+[Sun 14:15:57 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57bf8fac484e8-HKG]
+[Sun 14:15:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57c038c8384e8-HKG]
+[Sun 14:16:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:16:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57c36ca7284e8-HKG]
+[Sun 14:16:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57c917ef36e64-HKG]
+[Sun 14:16:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57cb82a286e64-HKG]
+[Sun 14:16:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57cd87fb06e64-HKG]
+[Sun 14:16:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:16:44 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57d192e5f6e64-HKG]
+[Sun 14:17:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:17:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57e0a3d1185ac-HKG]
+[Sun 14:17:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57e363f3785ac-HKG]
+[Sun 14:17:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:17:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57e60986a85ac-HKG]
+[Sun 14:17:45 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57e9b398085ac-HKG]
+[Sun 14:18:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:18:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57f427d0185be-HKG]
+[Sun 14:18:23 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57f841c4e85be-HKG]
+[Sun 14:18:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:18:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa57fe0ee9504ff-HKG]
+[Sun 14:18:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa580330a7ee666-HKG]
+[Sun 14:19:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa580892b0184d2-HKG]
+[Sun 14:19:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58091bb1784d2-HKG]
+[Sun 14:19:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58130ad721061-HKG]
+[Sun 14:19:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:20:24 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58278be2b6e5e-HKG]
+[Sun 14:20:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:20:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa583299f8b85d7-HKG]
+[Sun 14:21:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:21:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5840f38d204e0-HKG]
+[Sun 14:21:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:21:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5848c5c958b57-HKG]
+[Sun 14:22:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa584d8ee1d0463-HKG]
+[Sun 14:22:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:22:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa584f93fe40463-HKG]
+[Sun 14:22:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:22:37 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa585b65e0884cf-HKG]
+[Sun 14:22:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5861d7f968512-HKG]
+[Sun 14:23:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58655bec08512-HKG]
+[Sun 14:23:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:23:09 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58684ba158512-HKG]
+[Sun 14:23:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa586c2ccad8512-HKG]
+[Sun 14:23:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58710cd56e676-HKG]
+[Sun 14:23:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:24:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa588b098c68b89-HKG]
+[Sun 14:24:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa588deaa048b89-HKG]
+[Sun 14:24:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5890f0bb48b89-HKG]
+[Sun 14:24:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5891c8e238b89-HKG]
+[Sun 14:24:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5892c4a108b89-HKG]
+[Sun 14:25:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:25:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5895b49ca8b89-HKG]
+[Sun 14:25:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5898fcd268b89-HKG]
+[Sun 14:25:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa589fd7cab108a-HKG]
+[Sun 14:25:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58a004897108a-HKG]
+[Sun 14:25:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:26:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58b5329c50504-HKG]
+[Sun 14:26:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58b67e8a40504-HKG]
+[Sun 14:26:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:26:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58b9c7aef0504-HKG]
+[Sun 14:26:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58c19cd492107-HKG]
+[Sun 14:27:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:27:09 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58c5ceee484d2-HKG]
+[Sun 14:27:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58ca99d9884bb-HKG]
+[Sun 14:27:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:27:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58d83998507a6-HKG]
+[Sun 14:28:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:28:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58e8ece7cb46a-HKG]
+[Sun 14:29:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:29:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa58f6839cd211d-HKG]
+[Sun 14:29:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:30:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa590b82a6d6e3f-HKG]
+[Sun 14:30:15 UTC] [INFO] [LEAVE_MESSAGES] Inyrin is leaving silently, leave message will not be sent
+[Sun 14:30:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:31:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5921dabbd8517-HKG]
+[Sun 14:31:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:32:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa594172fa70446-HKG]
+[Sun 14:32:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:32:37 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5945d7de01fc8-HKG]
+[Sun 14:32:44 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5948ded201fc8-HKG]
+[Sun 14:32:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa594d479fd1fb5-HKG]
+[Sun 14:33:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:35:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5980d0b5a097f-HKG]
+[Sun 14:35:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:37:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa59b7f4b4d84ba-HKG]
+[Sun 14:37:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:38:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa59ceb5ffc0456-HKG]
+[Sun 14:38:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:40:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5a04d1bdc1069-HKG]
+[Sun 14:41:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:41:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5a102eefa1fbb-HKG]
+[Sun 14:41:16 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5a108b9a21fbb-HKG]
+[Sun 14:41:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5a1261f671fbb-HKG]
+[Sun 14:41:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5a164b88f1fbb-HKG]
+[Sun 14:41:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:41:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5a2105a1de68e-HKG]
+[Sun 14:42:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:42:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5a24dee7ee68e-HKG]
+[Sun 14:42:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:42:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5a3701a1b097b-HKG]
+[Sun 14:43:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:48:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5ab1af89ab45b-HKG]
+[Sun 14:48:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5ab328c72b45b-HKG]
+[Sun 14:48:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5ab6d6950b45b-HKG]
+[Sun 14:48:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5ab950c93b45b-HKG]
+[Sun 14:48:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5abb67f63b45b-HKG]
+[Sun 14:48:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:48:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5abe65facb45b-HKG]
+[Sun 14:49:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:49:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5ace02c3204fd-HKG]
+[Sun 14:49:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5acfe291104fd-HKG]
+[Sun 14:49:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:49:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5ad8f881f2117-HKG]
+[Sun 14:49:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5ad93bf242117-HKG]
+[Sun 14:49:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5ad9cdf432117-HKG]
+[Sun 14:50:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:51:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5b02d18e41fc7-HKG]
+[Sun 14:51:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5b076e8dd5df5-HKG]
+[Sun 14:51:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5b0924dca5df5-HKG]
+[Sun 14:52:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 14:52:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5b208f8910f08-HKG]
+[Sun 14:52:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5b20d3eb40f08-HKG]
+[Sun 14:53:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 14:57:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5b8f66d5404ca-HKG]
+[Sun 14:58:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:00:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5bcf8a8f98557-HKG]
+[Sun 15:00:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:00:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5bd620b1784f1-HKG]
+[Sun 15:00:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5bd713d9284f1-HKG]
+[Sun 15:00:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5bdc30a1d8561-HKG]
+[Sun 15:00:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5bde8ac3c8561-HKG]
+[Sun 15:01:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 15:01:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5be69ca075dd2-HKG]
+[Sun 15:01:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5be6c8e8c5dd2-HKG]
+[Sun 15:01:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5be988b725dd2-HKG]
+[Sun 15:01:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5beb069ef5dd2-HKG]
+[Sun 15:01:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:01:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5bece78195dd2-HKG]
+[Sun 15:01:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5beee6df65dd2-HKG]
+[Sun 15:01:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5bef16b375dd2-HKG]
+[Sun 15:02:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5bf6dccdd0489-HKG]
+[Sun 15:02:05 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5bf865f820489-HKG]
+[Sun 15:02:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:02:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5c01eeb57211e-HKG]
+[Sun 15:02:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 15:02:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5c062ad612521-HKG]
+[Sun 15:02:42 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5c072eaee2521-HKG]
+[Sun 15:02:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5c0a7c8992521-HKG]
+[Sun 15:02:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5c0d9fb4d2521-HKG]
+[Sun 15:03:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5c0f118912521-HKG]
+[Sun 15:03:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 15:03:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5c114aec12521-HKG]
+[Sun 15:03:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:05:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5c3f19f9c050b-HKG]
+[Sun 15:05:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:10:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5cb906f982102-HKG]
+[Sun 15:10:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:12:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5cf56daa210a3-HKG]
+[Sun 15:12:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5cf6d0fd110a3-HKG]
+[Sun 15:13:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5cfa9eca610a3-HKG]
+[Sun 15:13:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5cff30c830ef0-HKG]
+[Sun 15:13:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5d04318ad20db-HKG]
+[Sun 15:13:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:18:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5d6db28730512-HKG]
+[Sun 15:18:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:22:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5dd8258d884eb-HKG]
+[Sun 15:22:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:22:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5dde3c82410a9-HKG]
+[Sun 15:22:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5de0eab4a10a9-HKG]
+[Sun 15:23:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:23:09 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5de649db904a5-HKG]
+[Sun 15:23:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5deaa08d820ee-HKG]
+[Sun 15:23:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:23:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5df7d2afc7152-HKG]
+[Sun 15:24:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:24:34 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e07719848604-HKG]
+[Sun 15:24:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:24:44 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e0b50b108604-HKG]
+[Sun 15:24:50 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e0dbe90d8604-HKG]
+[Sun 15:25:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e12deace5dd6-HKG]
+[Sun 15:25:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:25:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e183d863079f-HKG]
+[Sun 15:25:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e1878cee079f-HKG]
+[Sun 15:25:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e1d97c8885f5-HKG]
+[Sun 15:25:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:25:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e25a7c068552-HKG]
+[Sun 15:25:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e2646d3a8552-HKG]
+[Sun 15:26:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:26:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e36fd93e857c-HKG]
+[Sun 15:26:47 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e3b98b735de1-HKG]
+[Sun 15:26:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e3eb39d35de1-HKG]
+[Sun 15:26:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e3fcacbc5de1-HKG]
+[Sun 15:27:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:27:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e43b9cb75de1-HKG]
+[Sun 15:27:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e4afbe1785c7-HKG]
+[Sun 15:27:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:27:37 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e4eedc0385c7-HKG]
+[Sun 15:28:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:28:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e5a77ab507a2-HKG]
+[Sun 15:28:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e5e80ae307a2-HKG]
+[Sun 15:28:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e5fa5e4507a2-HKG]
+[Sun 15:28:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:28:47 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e6a8fb641076-HKG]
+[Sun 15:28:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e6f2096607a9-HKG]
+[Sun 15:29:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:29:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e7432fd78552-HKG]
+[Sun 15:29:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e77de8778552-HKG]
+[Sun 15:29:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e7997c418552-HKG]
+[Sun 15:29:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 15:29:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e7e4eb1b0445-HKG]
+[Sun 15:29:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e7eafce60445-HKG]
+[Sun 15:30:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e86d5f0004e1-HKG]
+[Sun 15:30:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 15:30:23 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e8eeab99043f-HKG]
+[Sun 15:30:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:30:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e98cbd6e0441-HKG]
+[Sun 15:30:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e9b78dd90441-HKG]
+[Sun 15:30:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5e9cacd200441-HKG]
+[Sun 15:31:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:31:13 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5ea38d9101073-HKG]
+[Sun 15:31:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5ea9e3cad5dff-HKG]
+[Sun 15:31:34 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5eabaefac5dff-HKG]
+[Sun 15:31:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 15:31:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5eac18c525dff-HKG]
+[Sun 15:32:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 16:01:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa61620fdc2b433-HKG]
+[Sun 16:01:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 16:02:00 UTC] [DEBUG] [JDA] Got Reconnect request (OP 7). Closing connection now...
+[Sun 16:02:00 UTC] [DEBUG] [JDA] Got disconnected from WebSocket (Code: 4900). Attempting to resume session
+[Sun 16:02:00 UTC] [DEBUG] [JDA] Attempting to reconnect in 0s
+[Sun 16:02:00 UTC] [DEBUG] [JDA] [Client] Disconnected due to 4900: OP 7: RECONNECT
+[Sun 16:02:00 UTC] [DEBUG] [JDA] Attempting to reconnect!
+[Sun 16:02:04 UTC] [DEBUG] [JDA] Connected to WebSocket
+[Sun 16:02:04 UTC] [DEBUG] [JDA] Sending Resume-packet...
+[Sun 16:02:04 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Sun 16:02:04 UTC] [DEBUG] [JDA] Successfully resumed Session!
+[Sun 16:02:05 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722182524736,"status":"online"}}
+[Sun 16:05:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa61c91699185fe-HKG]
+[Sun 16:06:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 16:09:23 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa6221dbc796e5e-HKG]
+[Sun 16:09:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 16:12:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa62737ab75847b-HKG]
+[Sun 16:13:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 16:36:14 UTC] [DEBUG] [JDA] Got Reconnect request (OP 7). Closing connection now...
+[Sun 16:36:14 UTC] [DEBUG] [JDA] Got disconnected from WebSocket (Code: 4900). Attempting to resume session
+[Sun 16:36:14 UTC] [DEBUG] [JDA] [Client] Disconnected due to 4900: OP 7: RECONNECT
+[Sun 16:36:14 UTC] [DEBUG] [JDA] Attempting to reconnect in 0s
+[Sun 16:36:14 UTC] [DEBUG] [JDA] Attempting to reconnect!
+[Sun 16:36:14 UTC] [DEBUG] [JDA] Connected to WebSocket
+[Sun 16:36:14 UTC] [DEBUG] [JDA] Sending Resume-packet...
+[Sun 16:36:14 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Sun 16:36:15 UTC] [DEBUG] [JDA] Successfully resumed Session!
+[Sun 16:36:15 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722184574895,"status":"online"}}
+[Sun 18:48:18 UTC] [DEBUG] [JDA] Got Reconnect request (OP 7). Closing connection now...
+[Sun 18:48:19 UTC] [DEBUG] [JDA] Got disconnected from WebSocket (Code: 4900). Attempting to resume session
+[Sun 18:48:19 UTC] [DEBUG] [JDA] Attempting to reconnect in 0s
+[Sun 18:48:19 UTC] [DEBUG] [JDA] Attempting to reconnect!
+[Sun 18:48:19 UTC] [DEBUG] [JDA] [Client] Disconnected due to 4900: OP 7: RECONNECT
+[Sun 18:48:19 UTC] [DEBUG] [JDA] Connected to WebSocket
+[Sun 18:48:19 UTC] [DEBUG] [JDA] Sending Resume-packet...
+[Sun 18:48:19 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Sun 18:48:19 UTC] [DEBUG] [JDA] Successfully resumed Session!
+[Sun 18:48:20 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722192499563,"status":"online"}}
+[Sun 20:01:22 UTC] [DEBUG] [JDA] Got Reconnect request (OP 7). Closing connection now...
+[Sun 20:01:22 UTC] [DEBUG] [JDA] Got disconnected from WebSocket (Code: 4900). Attempting to resume session
+[Sun 20:01:22 UTC] [DEBUG] [JDA] Attempting to reconnect in 0s
+[Sun 20:01:22 UTC] [DEBUG] [JDA] Attempting to reconnect!
+[Sun 20:01:22 UTC] [DEBUG] [JDA] [Client] Disconnected due to 4900: OP 7: RECONNECT
+[Sun 20:01:22 UTC] [DEBUG] [JDA] Connected to WebSocket
+[Sun 20:01:22 UTC] [DEBUG] [JDA] Sending Resume-packet...
+[Sun 20:01:22 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Sun 20:01:23 UTC] [DEBUG] [JDA] Successfully resumed Session!
+[Sun 20:01:23 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722196882777,"status":"online"}}
+[Sun 21:28:32 UTC] [DEBUG] [JDA] Got Reconnect request (OP 7). Closing connection now...
+[Sun 21:28:32 UTC] [DEBUG] [JDA] Got disconnected from WebSocket (Code: 4900). Attempting to resume session
+[Sun 21:28:32 UTC] [DEBUG] [JDA] Attempting to reconnect in 0s
+[Sun 21:28:32 UTC] [DEBUG] [JDA] Attempting to reconnect!
+[Sun 21:28:32 UTC] [DEBUG] [JDA] [Client] Disconnected due to 4900: OP 7: RECONNECT
+[Sun 21:28:33 UTC] [DEBUG] [JDA] Connected to WebSocket
+[Sun 21:28:33 UTC] [DEBUG] [JDA] Sending Resume-packet...
+[Sun 21:28:33 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Sun 21:28:33 UTC] [DEBUG] [JDA] Successfully resumed Session!
+[Sun 21:28:33 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722202113324,"status":"online"}}
+[Sun 21:58:53 UTC] [DEBUG] [JDA] Got Reconnect request (OP 7). Closing connection now...
+[Sun 21:58:53 UTC] [DEBUG] [JDA] Got disconnected from WebSocket (Code: 4900). Attempting to resume session
+[Sun 21:58:53 UTC] [DEBUG] [JDA] Attempting to reconnect in 0s
+[Sun 21:58:53 UTC] [DEBUG] [JDA] Attempting to reconnect!
+[Sun 21:58:53 UTC] [DEBUG] [JDA] [Client] Disconnected due to 4900: OP 7: RECONNECT
+[Sun 21:58:53 UTC] [DEBUG] [JDA] Connected to WebSocket
+[Sun 21:58:53 UTC] [DEBUG] [JDA] Sending Resume-packet...
+[Sun 21:58:54 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Sun 21:58:54 UTC] [DEBUG] [JDA] Successfully resumed Session!
+[Sun 21:58:54 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722203933759,"status":"online"}}
+[Sun 23:57:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8d0746f671059-HKG]
+[Sun 23:58:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 23:58:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8d1097e2f8579-HKG]
+[Sun 23:58:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:08:47 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e05aed2b0998-HKG]
+[Mon 00:08:57 UTC] [DEBUG] [MINECRAFT_TO_DISCORD] com.discordsrv.api.event.events.message.receive.game.GameChatMessageReceiveEvent@5072ec0a was cancelled by Unknown
+[Mon 00:09:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:10:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e357feb22308-HKG]
+[Mon 00:10:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e39578e72308-HKG]
+[Mon 00:11:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:11:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e3f8be7c7155-HKG]
+[Mon 00:11:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:12:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e5cda8ec0973-HKG]
+[Mon 00:12:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:12:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e6216ab38b5a-HKG]
+[Mon 00:13:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:13:10 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e6cb0ed904c4-HKG]
+[Mon 00:13:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e72b1e880eb9-HKG]
+[Mon 00:13:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e74b7e810eb9-HKG]
+[Mon 00:13:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e74d5fa90eb9-HKG]
+[Mon 00:13:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 00:13:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e79618dc1111-HKG]
+[Mon 00:13:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e7c85d3b1111-HKG]
+[Mon 00:14:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:14:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e826a91c9b47-HKG]
+[Mon 00:14:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:14:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e8f59d9610a7-HKG]
+[Mon 00:14:57 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e96638ae85fe-HKG]
+[Mon 00:15:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:15:11 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e9bfbe812308-HKG]
+[Mon 00:15:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8e9ee5b0c2308-HKG]
+[Mon 00:15:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8ea414bc8b473-HKG]
+[Mon 00:15:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:15:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8ea73e8e0b473-HKG]
+[Mon 00:16:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:19:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8effaf82a20f1-HKG]
+[Mon 00:19:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:21:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8f28c98bd85ac-HKG]
+[Mon 00:21:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:21:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8f3614950860a-HKG]
+[Mon 00:22:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:22:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8f443c9d3851d-HKG]
+[Mon 00:22:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:29:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8feb59c236e4c-HKG]
+[Mon 00:29:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:30:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa8ff77f9618567-HKG]
+[Mon 00:30:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:33:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa903f01ca785e3-HKG]
+[Mon 00:33:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:35:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa90791bc82854e-HKG]
+[Mon 00:35:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:36:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa908b5380f2101-HKG]
+[Mon 00:36:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:46:13 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9173389c56e64-HKG]
+[Mon 00:46:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa917a59b7b247f-HKG]
+[Mon 00:46:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 00:54:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9234028371fa6-HKG]
+[Mon 00:54:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 01:05:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa933317b6f07ae-HKG]
+[Mon 01:05:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 01:22:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa94c8d1f9223b0-HKG]
+[Mon 01:23:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 01:27:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9543bddeb8541-HKG]
+[Mon 01:28:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 01:50:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9760a4db90973-HKG]
+[Mon 01:51:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 01:55:07 UTC] [DEBUG] [JDA] Got Reconnect request (OP 7). Closing connection now...
+[Mon 01:55:07 UTC] [DEBUG] [JDA] Got disconnected from WebSocket (Code: 4900). Attempting to resume session
+[Mon 01:55:07 UTC] [DEBUG] [JDA] Attempting to reconnect in 0s
+[Mon 01:55:07 UTC] [DEBUG] [JDA] [Client] Disconnected due to 4900: OP 7: RECONNECT
+[Mon 01:55:07 UTC] [DEBUG] [JDA] Attempting to reconnect!
+[Mon 01:55:07 UTC] [DEBUG] [JDA] Connected to WebSocket
+[Mon 01:55:07 UTC] [DEBUG] [JDA] Sending Resume-packet...
+[Mon 01:55:07 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Mon 01:55:08 UTC] [DEBUG] [JDA] Successfully resumed Session!
+[Mon 01:55:08 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722218107980,"status":"online"}}
+[Mon 02:17:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa99d5cce8f210b-HKG]
+[Mon 02:18:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:18:37 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa99e8db9da5096-HKG]
+[Mon 02:18:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa99f13eee68573-HKG]
+[Mon 02:19:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa99f2ecea38573-HKG]
+[Mon 02:19:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 02:19:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa99f436a698573-HKG]
+[Mon 02:19:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:20:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a1452b008556-HKG]
+[Mon 02:20:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:20:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a1b52b3a84de-HKG]
+[Mon 02:21:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a2178c8b21d6-HKG]
+[Mon 02:21:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:21:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a231e9be21d6-HKG]
+[Mon 02:21:16 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a26cfb6b21d6-HKG]
+[Mon 02:21:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a2d21bb18520-HKG]
+[Mon 02:21:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:21:37 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a2f288998520-HKG]
+[Mon 02:22:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:22:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a4bd3efe8625-HKG]
+[Mon 02:23:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:24:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a719ef9a21f7-HKG]
+[Mon 02:24:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:24:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a791eb258491-HKG]
+[Mon 02:25:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:26:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9a962bcaa0454-HKG]
+[Mon 02:26:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:26:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9aa4e5afc106a-HKG]
+[Mon 02:26:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9aa5cfc91106a-HKG]
+[Mon 02:26:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9aa6b8e43106a-HKG]
+[Mon 02:26:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9aab88f84044e-HKG]
+[Mon 02:27:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 02:27:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9ab4fcd18b467-HKG]
+[Mon 02:27:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:28:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9acd74ff5848d-HKG]
+[Mon 02:28:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:30:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9af519ae110a4-HKG]
+[Mon 02:30:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:30:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b03b1cc704fc-HKG]
+[Mon 02:30:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b097fb991fb0-HKG]
+[Mon 02:31:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:31:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b10d2e3a85e6-HKG]
+[Mon 02:31:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b13dc9c385e6-HKG]
+[Mon 02:31:34 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b186aadd8605-HKG]
+[Mon 02:31:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:31:42 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b1b9db9f8605-HKG]
+[Mon 02:31:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b1f7ec338605-HKG]
+[Mon 02:32:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:32:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b2b12e3804fb-HKG]
+[Mon 02:32:24 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b2bc1b4404fb-HKG]
+[Mon 02:32:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:32:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b3522976b467-HKG]
+[Mon 02:32:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b399d93185bb-HKG]
+[Mon 02:33:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b39cacab85bb-HKG]
+[Mon 02:33:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 02:33:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b424cb5a84c0-HKG]
+[Mon 02:33:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:34:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b5271e6ce65a-HKG]
+[Mon 02:34:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:34:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b570dfb8211d-HKG]
+[Mon 02:34:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b58cefe0211d-HKG]
+[Mon 02:34:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:36:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b9442dc48b45-HKG]
+[Mon 02:36:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9b959b9208b45-HKG]
+[Mon 02:37:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:38:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9bbb8af8b84a9-HKG]
+[Mon 02:38:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:38:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9bbd51e5a84a9-HKG]
+[Mon 02:38:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9bc0fbdc884a9-HKG]
+[Mon 02:38:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9bc1dd88384a9-HKG]
+[Mon 02:38:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9bc5cea5184a9-HKG]
+[Mon 02:39:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9bc6b4ecf84a9-HKG]
+[Mon 02:39:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:40:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9be961c5c050e-HKG]
+[Mon 02:40:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9bea5cd86050e-HKG]
+[Mon 02:40:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 02:41:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9bf540fa78610-HKG]
+[Mon 02:41:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:41:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9bf88cb6e8610-HKG]
+[Mon 02:41:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:44:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9c4c73ec504e4-HKG]
+[Mon 02:44:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9c5259c4785bb-HKG]
+[Mon 02:45:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9c53ac97e85bb-HKG]
+[Mon 02:45:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:48:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9caeb4edc8548-HKG]
+[Mon 02:49:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:49:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9cb83eeb85dfb-HKG]
+[Mon 02:49:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9cbbced005dfb-HKG]
+[Mon 02:49:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 02:50:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9cc998e5a04fe-HKG]
+[Mon 02:50:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 02:51:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9cec6e96a84d0-HKG]
+[Mon 02:51:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:01:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9dcb5bc1e855f-HKG]
+[Mon 03:01:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:03:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9e0e30e9b0442-HKG]
+[Mon 03:04:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:04:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9e1728c5e852e-HKG]
+[Mon 03:04:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:06:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9e4d38ad99b7e-HKG]
+[Mon 03:07:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:20:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa9f8874be285ed-HKG]
+[Mon 03:20:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:42:05 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa18d269215de1-HKG]
+[Mon 03:42:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:42:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa1994ea6923b0-HKG]
+[Mon 03:43:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa1a348a058551-HKG]
+[Mon 03:43:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 03:43:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa1b365f1f23c8-HKG]
+[Mon 03:43:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa1b87eff9e6ae-HKG]
+[Mon 03:44:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 03:44:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa1c49e9c7853a-HKG]
+[Mon 03:44:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:44:42 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa1ca67c8f84a9-HKG]
+[Mon 03:45:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:46:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa1fcf2813853a-HKG]
+[Mon 03:47:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:50:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa25da5c1604fb-HKG]
+[Mon 03:51:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:51:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa264dde8e107f-HKG]
+[Mon 03:51:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:51:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa26f1099d85e6-HKG]
+[Mon 03:52:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:54:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa2ad03ba00963-HKG]
+[Mon 03:54:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:54:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa2b758b8951da-HKG]
+[Mon 03:55:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa2bc57b85108a-HKG]
+[Mon 03:55:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:55:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa2c6c6a760958-HKG]
+[Mon 03:55:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:55:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa2cadbd750958-HKG]
+[Mon 03:56:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:56:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa2df50f29848d-HKG]
+[Mon 03:56:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:56:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa2e2f28fe848d-HKG]
+[Mon 03:57:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 03:59:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa321cef8684fa-HKG]
+[Mon 03:59:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa324aaace84fa-HKG]
+[Mon 03:59:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:00:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa341e48f45df4-HKG]
+[Mon 04:01:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:01:34 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa355bee75b44b-HKG]
+[Mon 04:02:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:19:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa4f0e2a4f84b7-HKG]
+[Mon 04:19:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa4f5e5a98080f-HKG]
+[Mon 04:19:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:20:37 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa51454f0b85ac-HKG]
+[Mon 04:21:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:25:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa57dc0dbb85af-HKG]
+[Mon 04:25:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:30:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa60244a331083-HKG]
+[Mon 04:31:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:32:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa63260f939b42-HKG]
+[Mon 04:33:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa636c2b928617-HKG]
+[Mon 04:33:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:33:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa63bd6e708601-HKG]
+[Mon 04:33:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa63e9c9588601-HKG]
+[Mon 04:33:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:34:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa64f20cdf10a4-HKG]
+[Mon 04:34:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:34:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa6621fb9c043f-HKG]
+[Mon 04:34:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa6646df2b043f-HKG]
+[Mon 04:35:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 04:35:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa66c48a9e04cc-HKG]
+[Mon 04:35:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa673329150791-HKG]
+[Mon 04:36:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:36:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa6882cc66714d-HKG]
+[Mon 04:36:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:38:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa6b2eaddb6e46-HKG]
+[Mon 04:38:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:47:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa792e4e1e1067-HKG]
+[Mon 04:47:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa79530cee1067-HKG]
+[Mon 04:48:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:48:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa79e1af71211d-HKG]
+[Mon 04:48:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:49:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa7ad87d158617-HKG]
+[Mon 04:49:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa7ad93e0a8617-HKG]
+[Mon 04:49:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 04:49:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa7b74cfc69b41-HKG]
+[Mon 04:49:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:50:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa7c660d4d0796-HKG]
+[Mon 04:50:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:50:44 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa7d5ebb4d0458-HKG]
+[Mon 04:50:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa7d8d4b6c0458-HKG]
+[Mon 04:51:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 04:51:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa7ebc6a24b453-HKG]
+[Mon 04:51:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa7ee1dad7b453-HKG]
+[Mon 04:52:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 04:53:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa8134acdd0ee4-HKG]
+[Mon 04:53:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:54:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa83287b3b9b7e-HKG]
+[Mon 04:54:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa8356296c9b7e-HKG]
+[Mon 04:55:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:55:50 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa84d90aae1087-HKG]
+[Mon 04:55:50 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa84dc3ecd1087-HKG]
+[Mon 04:56:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:58:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa88113e3c0437-HKG]
+[Mon 04:58:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa8820f9c10437-HKG]
+[Mon 04:58:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 04:58:10 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa88442e820437-HKG]
+[Mon 04:58:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa8865fb3b0437-HKG]
+[Mon 04:58:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa88a71a3e0437-HKG]
+[Mon 04:58:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 04:59:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa8ac068ea0501-HKG]
+[Mon 05:00:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:02:24 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa8e768df12410-HKG]
+[Mon 05:02:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa8ea75e522410-HKG]
+[Mon 05:02:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:02:47 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa8f089fba1099-HKG]
+[Mon 05:03:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa8f660d180f10-HKG]
+[Mon 05:03:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:03:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa90093c751fbe-HKG]
+[Mon 05:03:34 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa902cd8921fbe-HKG]
+[Mon 05:03:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 05:03:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9098fa2184f1-HKG]
+[Mon 05:04:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:06:13 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa94123f3720e1-HKG]
+[Mon 05:06:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa947c58d184be-HKG]
+[Mon 05:06:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9496ab3584be-HKG]
+[Mon 05:06:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 05:07:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9592cfb084bb-HKG]
+[Mon 05:07:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:08:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa970b89de04be-HKG]
+[Mon 05:08:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:09:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9950bb8d0f20-HKG]
+[Mon 05:10:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:10:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9a478c1985d4-HKG]
+[Mon 05:10:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:10:45 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9ab60ef21062-HKG]
+[Mon 05:10:47 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9ac379c71062-HKG]
+[Mon 05:10:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9acd0e1a1062-HKG]
+[Mon 05:11:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9b1e0d870f14-HKG]
+[Mon 05:11:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 05:11:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9b67fb818579-HKG]
+[Mon 05:11:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9b7ced168579-HKG]
+[Mon 05:11:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9bd96b338625-HKG]
+[Mon 05:11:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 05:12:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9d35bc6fe67a-HKG]
+[Mon 05:12:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:12:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9db2491a04c7-HKG]
+[Mon 05:13:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:13:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9eef0f8d20f3-HKG]
+[Mon 05:13:57 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaa9f66dde5096a-HKG]
+[Mon 05:14:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:14:24 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa00e1ce910a0-HKG]
+[Mon 05:14:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:14:45 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa08cee9a8588-HKG]
+[Mon 05:15:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa0ed2ca20ecc-HKG]
+[Mon 05:15:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:15:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa11568ab0ecc-HKG]
+[Mon 05:15:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:15:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa2340949858b-HKG]
+[Mon 05:16:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:16:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa3a0ae570ebe-HKG]
+[Mon 05:16:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa3c2ea800ebe-HKG]
+[Mon 05:16:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa3d5798a0ebe-HKG]
+[Mon 05:17:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa3eceffa0ebe-HKG]
+[Mon 05:17:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:18:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa584ad345de1-HKG]
+[Mon 05:18:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:18:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa65d0e9b0ef4-HKG]
+[Mon 05:18:57 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa6b5bb91109b-HKG]
+[Mon 05:19:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa6da08e6109b-HKG]
+[Mon 05:19:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 05:19:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaa724abb60f1c-HKG]
+[Mon 05:19:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:23:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaad4bdc028496-HKG]
+[Mon 05:23:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:24:42 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaaf237e768506-HKG]
+[Mon 05:25:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:27:11 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaab2c20a5ab41b-HKG]
+[Mon 05:27:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaab3428d455dd8-HKG]
+[Mon 05:27:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:29:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaab5b81b7724b2-HKG]
+[Mon 05:29:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:35:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaabee27adf8485-HKG]
+[Mon 05:35:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:42:05 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaac8967f3810a2-HKG]
+[Mon 05:42:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaac92019aa247f-HKG]
+[Mon 05:42:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 05:46:09 UTC] [DEBUG] [JDA] Got Reconnect request (OP 7). Closing connection now...
+[Mon 05:46:09 UTC] [DEBUG] [JDA] Got disconnected from WebSocket (Code: 4900). Attempting to resume session
+[Mon 05:46:09 UTC] [DEBUG] [JDA] Attempting to reconnect in 0s
+[Mon 05:46:09 UTC] [DEBUG] [JDA] Attempting to reconnect!
+[Mon 05:46:09 UTC] [DEBUG] [JDA] [Client] Disconnected due to 4900: OP 7: RECONNECT
+[Mon 05:46:10 UTC] [DEBUG] [JDA] Connected to WebSocket
+[Mon 05:46:10 UTC] [DEBUG] [JDA] Sending Resume-packet...
+[Mon 05:46:10 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Mon 05:46:10 UTC] [DEBUG] [JDA] Successfully resumed Session!
+[Mon 05:46:10 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722231970302,"status":"online"}}
+[Mon 05:46:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaacf983dc25e07-HKG]
+[Mon 05:47:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:47:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaad0afea388b24-HKG]
+[Mon 05:47:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaad109e81d8576-HKG]
+[Mon 05:48:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 05:48:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaad1b56cee1fc1-HKG]
+[Mon 05:48:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaad20af8880504-HKG]
+[Mon 05:48:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:57:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaadf950d366e46-HKG]
+[Mon 05:58:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 05:58:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaae05a99f004db-HKG]
+[Mon 05:58:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaae08e28f804db-HKG]
+[Mon 05:58:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 05:58:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaae11abd3484ca-HKG]
+[Mon 05:59:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:00:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaae3447bab8514-HKG]
+[Mon 06:00:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaae391b98b85e6-HKG]
+[Mon 06:00:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 06:09:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaf0207e7320f5-HKG]
+[Mon 06:09:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:09:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaf0725a895ddc-HKG]
+[Mon 06:09:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:10:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaf2801fad107d-HKG]
+[Mon 06:11:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:11:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaaf3e90ef9105d-HKG]
+[Mon 06:12:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:26:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab09fced7c07a6-HKG]
+[Mon 06:27:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:31:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab11b0dd00860a-HKG]
+[Mon 06:32:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:38:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab1af38e255de9-HKG]
+[Mon 06:38:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:39:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab1c2e0e2b04f5-HKG]
+[Mon 06:39:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:40:45 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab1e87aba285ac-HKG]
+[Mon 06:40:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab1e9d89d585ac-HKG]
+[Mon 06:40:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab1ebe5c1785ac-HKG]
+[Mon 06:41:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:41:27 UTC] [DEBUG] [MINECRAFT_TO_DISCORD] com.discordsrv.api.event.events.message.receive.game.GameChatMessageReceiveEvent@3fedf07 was cancelled by Unknown
+[Mon 06:41:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab20062fdc850f-HKG]
+[Mon 06:41:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab20368e98850f-HKG]
+[Mon 06:41:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab203ffdb8850f-HKG]
+[Mon 06:42:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:43:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab21fe3aab23b0-HKG]
+[Mon 06:43:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab229d090c0506-HKG]
+[Mon 06:43:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:43:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab22b3a8210506-HKG]
+[Mon 06:43:45 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab22f018a30506-HKG]
+[Mon 06:44:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 06:44:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab2376cdf3b433-HKG]
+[Mon 06:44:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab241d2cb38573-HKG]
+[Mon 06:44:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:44:50 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab248479258564-HKG]
+[Mon 06:44:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab24992ca58564-HKG]
+[Mon 06:44:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab249dcde88564-HKG]
+[Mon 06:45:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:45:11 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab250818c5856a-HKG]
+[Mon 06:45:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab25431cea856a-HKG]
+[Mon 06:45:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:46:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab264e8f410ef8-HKG]
+[Mon 06:46:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:46:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab27687bf50434-HKG]
+[Mon 06:46:50 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab27759b120434-HKG]
+[Mon 06:47:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:47:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab27e23d8d0452-HKG]
+[Mon 06:47:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:48:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab299339680466-HKG]
+[Mon 06:48:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:49:44 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab2bb52e0e856a-HKG]
+[Mon 06:50:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:50:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab2d6a0bfe5ddb-HKG]
+[Mon 06:50:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab2d6d7a5e5ddb-HKG]
+[Mon 06:51:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:53:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab308689d5860d-HKG]
+[Mon 06:53:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:53:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab31777a1e84cf-HKG]
+[Mon 06:54:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:54:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab323a2eac0994-HKG]
+[Mon 06:54:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab32a4db851089-HKG]
+[Mon 06:54:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:54:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab32e24ded1089-HKG]
+[Mon 06:54:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab33107cc21089-HKG]
+[Mon 06:54:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab333f19931089-HKG]
+[Mon 06:54:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab33419ce41089-HKG]
+[Mon 06:55:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:56:44 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab35f16d272105-HKG]
+[Mon 06:57:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:57:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab36d67af58b3f-HKG]
+[Mon 06:57:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab371c3f498567-HKG]
+[Mon 06:57:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:58:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab37d1bb4220fc-HKG]
+[Mon 06:58:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:58:13 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab381dacf124bb-HKG]
+[Mon 06:58:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab383bfe7a24bb-HKG]
+[Mon 06:58:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab386cf95324bb-HKG]
+[Mon 06:58:34 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab38a31e3524bb-HKG]
+[Mon 06:58:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 06:59:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab39a448f984b1-HKG]
+[Mon 06:59:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab39babfa284b1-HKG]
+[Mon 06:59:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:01:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab3cbb8e396e4c-HKG]
+[Mon 07:01:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab3cbe99ee6e4c-HKG]
+[Mon 07:01:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab3ccf8fdc6e4c-HKG]
+[Mon 07:01:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:01:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab3d8edb1a857c-HKG]
+[Mon 07:02:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:03:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab3ff26cf00796-HKG]
+[Mon 07:03:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:04:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab40c3cd3607ae-HKG]
+[Mon 07:04:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab4164a85b04f6-HKG]
+[Mon 07:04:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:04:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab41c9df15105d-HKG]
+[Mon 07:05:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:06:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab440ca933850b-HKG]
+[Mon 07:06:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab44353bb5850b-HKG]
+[Mon 07:06:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab44384a12850b-HKG]
+[Mon 07:06:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:06:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab44b9cd3504bf-HKG]
+[Mon 07:07:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:07:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab457d5972b458-HKG]
+[Mon 07:07:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab45dad85db454-HKG]
+[Mon 07:08:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:08:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab46a29fdf04df-HKG]
+[Mon 07:08:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:09:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab48e67aa020ed-HKG]
+[Mon 07:09:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab491f3a2020ed-HKG]
+[Mon 07:10:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab496d99b96e64-HKG]
+[Mon 07:10:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab4977ddf36e64-HKG]
+[Mon 07:10:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 07:10:10 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab499e9e9f6e64-HKG]
+[Mon 07:10:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:11:30 UTC] [INFO] [JOIN_MESSAGES] Inyrin is joining silently, join message will not be sent
+[Mon 07:11:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab4bd79fbf84f0-HKG]
+[Mon 07:11:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab4bfc295f84f0-HKG]
+[Mon 07:11:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab4c0def4684f0-HKG]
+[Mon 07:12:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab4c560fc9096a-HKG]
+[Mon 07:12:05 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 07:13:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab4dd00d6a84a6-HKG]
+[Mon 07:13:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:13:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab4f1bec7e108e-HKG]
+[Mon 07:14:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:15:05 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab50d4d8348522-HKG]
+[Mon 07:15:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:16:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab539e48bc855a-HKG]
+[Mon 07:17:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:17:11 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab53eb39008b89-HKG]
+[Mon 07:17:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:18:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab55e83b2c857f-HKG]
+[Mon 07:18:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:19:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab56fc3953110f-HKG]
+[Mon 07:19:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab572c899a110f-HKG]
+[Mon 07:19:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab5757fb76110f-HKG]
+[Mon 07:19:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:19:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab578e0919110f-HKG]
+[Mon 07:19:45 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab57aaca2b110f-HKG]
+[Mon 07:20:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab58174bc585ca-HKG]
+[Mon 07:20:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:21:23 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab5a0f08842117-HKG]
+[Mon 07:21:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:21:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab5ac31f2db453-HKG]
+[Mon 07:21:54 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab5ad1fa06b453-HKG]
+[Mon 07:22:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab5af9bcb7b453-HKG]
+[Mon 07:22:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab5b0da9eeb453-HKG]
+[Mon 07:22:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:23:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab5d2d2b2a1111-HKG]
+[Mon 07:23:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:24:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab5e9cbb950457-HKG]
+[Mon 07:24:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:25:09 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab5f960e330ee8-HKG]
+[Mon 07:25:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab5fd60c120ee8-HKG]
+[Mon 07:25:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab600dff6f0ee8-HKG]
+[Mon 07:25:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab60253e510ee8-HKG]
+[Mon 07:25:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 07:25:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab60977f6a8516-HKG]
+[Mon 07:25:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab60c559f18516-HKG]
+[Mon 07:26:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:26:11 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab61199af584c0-HKG]
+[Mon 07:26:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab6193c94c0976-HKG]
+[Mon 07:26:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:26:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab61b3dd920976-HKG]
+[Mon 07:26:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab61cfadb70976-HKG]
+[Mon 07:26:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab6220b8808619-HKG]
+[Mon 07:27:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:27:13 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab629c6ac21fb2-HKG]
+[Mon 07:27:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab62f5cc8d5de2-HKG]
+[Mon 07:27:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:28:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab63d7696b20fc-HKG]
+[Mon 07:28:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:28:09 UTC] [INFO] [LEAVE_MESSAGES] Inyrin is leaving silently, leave message will not be sent
+[Mon 07:28:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab6417786720fc-HKG]
+[Mon 07:28:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab6433386020fc-HKG]
+[Mon 07:28:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:28:37 UTC] [INFO] [JOIN_MESSAGES] Inyrin is joining silently, join message will not be sent
+[Mon 07:30:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab680a1f6a855e-HKG]
+[Mon 07:31:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:31:24 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab68b8dc2e8522-HKG]
+[Mon 07:31:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:32:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab6a5a499b85ff-HKG]
+[Mon 07:32:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:33:47 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab6c3aec2b04ea-HKG]
+[Mon 07:34:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:34:34 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab6d5decc18524-HKG]
+[Mon 07:34:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:34:45 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab6da0ea575158-HKG]
+[Mon 07:34:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab6db6c9825158-HKG]
+[Mon 07:34:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab6dbdfde05158-HKG]
+[Mon 07:35:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:36:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab701609b41fb5-HKG]
+[Mon 07:36:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:38:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab73cdaea11fc7-HKG]
+[Mon 07:39:05 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab73fcdd1b1fc7-HKG]
+[Mon 07:39:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:40:44 UTC] [DEBUG] [JDA] Unrecognized event:
+{"op":0,"s":2564,"t":"GUILD_JOIN_REQUEST_UPDATE","d":{"request":{"form_responses":null,"last_seen":"2024-07-29T07:40:44.777891+00:00","interview_channel_id":null,"created_at":"2024-07-29T07:40:44.461000+00:00","join_request_id":"1267386315276816479","actioned_at":"1267386316597891145","actioned_by_user":{"global_name":"hnuw._nal","avatar_decoration_data":null,"clan":null,"public_flags":0,"id":"1143842920382869565","avatar":"7b7f899b3c158eb0abaf3c91ef5c8977","username":"titantat.","discriminator":"0"},"user_id":"1143842920382869565","guild_id":"1053873232907862106","rejection_reason":null,"application_status":"APPROVED","id":"1267386315276816479","user":{"global_name":"hnuw._nal","avatar_decoration_data":null,"clan":null,"public_flags":0,"id":"1143842920382869565","avatar":"7b7f899b3c158eb0abaf3c91ef5c8977","username":"titantat.","discriminator":"0"}},"guild_id":"1053873232907862106","status":"APPROVED"}}
+[Mon 07:42:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab79813d6c8605-HKG]
+[Mon 07:43:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:43:59 UTC] [INFO] [LEAVE_MESSAGES] Inyrin is leaving silently, leave message will not be sent
+[Mon 07:44:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab7b4a3ac5b453-HKG]
+[Mon 07:44:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:46:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab7e2458b70465-HKG]
+[Mon 07:46:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab7e388cf60465-HKG]
+[Mon 07:46:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab7e87df840468-HKG]
+[Mon 07:46:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab7ea128310468-HKG]
+[Mon 07:46:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 07:47:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab7fba3d0a1079-HKG]
+[Mon 07:47:23 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab802219327164-HKG]
+[Mon 07:47:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 07:48:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab8155b88c84c0-HKG]
+[Mon 07:48:13 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab815f5e2b84c0-HKG]
+[Mon 07:48:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 07:48:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab820c4dc884de-HKG]
+[Mon 07:48:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab827ae84e045d-HKG]
+[Mon 07:49:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:49:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab82ab4aec045d-HKG]
+[Mon 07:49:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab834ebb8f0484-HKG]
+[Mon 07:49:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:50:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab8414dc1d045c-HKG]
+[Mon 07:50:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:50:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab84805f858491-HKG]
+[Mon 07:50:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab849a8d3a8491-HKG]
+[Mon 07:50:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:50:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab84e55e1eb472-HKG]
+[Mon 07:50:50 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab8536390785db-HKG]
+[Mon 07:51:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:51:34 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab8645cc0520f0-HKG]
+[Mon 07:51:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:52:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab86e66b36096b-HKG]
+[Mon 07:52:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:52:11 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab872e7a0d849f-HKG]
+[Mon 07:52:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:53:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab886d89458b69-HKG]
+[Mon 07:53:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:53:10 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab889dadac8b69-HKG]
+[Mon 07:53:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab88abd8148b69-HKG]
+[Mon 07:53:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab88b5cbfe8b69-HKG]
+[Mon 07:53:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 07:54:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab8a74c9960437-HKG]
+[Mon 07:54:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab8aa43fa40437-HKG]
+[Mon 07:54:35 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Mon 07:54:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab8af7087904d5-HKG]
+[Mon 07:55:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:55:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab8bed4e2504bb-HKG]
+[Mon 07:55:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 07:57:50 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab8f75bc5f04ef-HKG]
+[Mon 07:58:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab8fbc0fd18530-HKG]
+[Mon 07:58:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 08:01:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab94f34c8a2495-HKG]
+[Mon 08:02:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 08:04:10 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab98bcf9ef04fc-HKG]
+[Mon 08:04:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 08:05:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aab9a5c9c2351da-HKG]
+[Mon 08:05:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 08:07:52 UTC] [INFO] Reloading DiscordSRV...
+[Mon 08:07:52 UTC] [DEBUG] [MODULE_MANAGER] Reloading modules (DiscordSRV ready = true)
+[Mon 08:07:52 UTC] [DEBUG] [CONSOLE] Skipping a console handler due to lack of channel
+[Mon 08:07:52 UTC] [DEBUG] [CONSOLE] 0 console handlers active
+[Mon 08:07:52 UTC] [DEBUG] [INVITE] Bot is in 2 servers, not automatically determining invites
+[Mon 08:07:52 UTC] [INFO] Reload complete.
+[Mon 08:07:52 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722240472546,"status":"online"}}
+[Mon 08:09:19 UTC] [DEBUG] [JDA] Unrecognized event:
+{"op":0,"s":2676,"t":"GUILD_JOIN_REQUEST_UPDATE","d":{"request":{"form_responses":null,"last_seen":"2024-07-29T08:09:19.693266+00:00","interview_channel_id":null,"created_at":"2024-07-29T08:09:18.873000+00:00","join_request_id":"1267393506041794642","actioned_at":"1267393509321736275","actioned_by_user":{"global_name":"Shyn","avatar_decoration_data":null,"clan":null,"public_flags":0,"id":"1045935111113281558","avatar":"75b0cbfb1987f54008944fe280643e3b","username":"shyn280327","discriminator":"0"},"user_id":"1045935111113281558","guild_id":"1053873232907862106","rejection_reason":null,"application_status":"APPROVED","id":"1267393506041794642","user":{"global_name":"Shyn","avatar_decoration_data":null,"clan":null,"public_flags":0,"id":"1045935111113281558","avatar":"75b0cbfb1987f54008944fe280643e3b","username":"shyn280327","discriminator":"0"}},"guild_id":"1053873232907862106","status":"APPROVED"}}
+[Mon 08:11:11 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaba2fdaa120f18-HKG]
+[Mon 08:11:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 08:14:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaba7518bb784fa-HKG]
+[Mon 08:14:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 08:14:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aaba8167e2c248d-HKG]
+[Mon 08:15:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 08:16:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aabab42fc505df5-HKG]
+[Mon 08:17:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 08:17:13 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aababd61d4eb419-HKG]
+[Mon 08:17:35 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 08:17:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aabacf96db1b454-HKG]
+[Mon 08:18:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Mon 08:18:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aabae5ace151077-HKG]
+[Mon 08:18:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aabae70ee0c1077-HKG]
+[Mon 08:19:05 UTC] [DEBUG] [JDA] Removed 1 expired buckets

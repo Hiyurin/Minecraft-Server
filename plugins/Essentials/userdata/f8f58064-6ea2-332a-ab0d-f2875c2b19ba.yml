@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 115.76.51.56
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1722214466355
+  login: 1722211726070
+money: '0'
+last-account-name: Pier_tan79
+logoutlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: -343.39309547459413
+  y: 83.0
+  z: 760.3000000119209
+  yaw: 79.7987060546875
+  pitch: 26.850051879882812

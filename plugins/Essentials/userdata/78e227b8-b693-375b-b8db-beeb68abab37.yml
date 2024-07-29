@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 113.185.46.83
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1722179417436
+  login: 1722175226976
+money: '0'
+last-account-name: tanklesscamp658
+logoutlocation:
+  world: 1a27ca10-4fb9-4a29-ba63-1246cfc9037c
+  world-name: world_nether
+  x: 538.9516009348125
+  y: 52.0
+  z: -396.4357188725643
+  yaw: -114.70245361328125
+  pitch: 21.558500289916992

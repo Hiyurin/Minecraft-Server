@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 171.234.14.114
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1722220624048
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1722222256851
+  login: 1722220203305
+money: '0'
+last-account-name: AkitoshiKari
+logoutlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: -902.3348443444838
+  y: 74.0
+  z: -141.83126541848466
+  yaw: -170.9728546142578
+  pitch: 17.839509963989258
+lastlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: -101.61181421168592
+  y: 35.0
+  z: 58.547403016111396
+  yaw: -178.08575439453125
+  pitch: 25.799997329711914

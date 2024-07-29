@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 171.243.58.201
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1722138507288
+  login: 1722138245865
+money: '0'
+last-account-name: .LenKagune456169
+logoutlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: 8.5
+  y: 63.0
+  z: 14.5
+  yaw: -85.87254333496094
+  pitch: 9.030868530273438

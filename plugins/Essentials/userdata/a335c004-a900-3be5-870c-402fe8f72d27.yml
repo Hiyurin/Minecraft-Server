@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 59.153.248.171
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1722241344461
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1722238000565
+  login: 1722239163970
+  command-cooldowns:
+  - pattern: .*( .*)?
+    value: 1722241334362
+money: '0'
+last-account-name: noir
+logoutlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: -57.66006974057808
+  y: 36.0
+  z: 45.42827562778902
+  yaw: 128.1013946533203
+  pitch: 77.5499267578125
+lastlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: 347.634955357453
+  y: 68.0
+  z: 47.33732621765947
+  yaw: 11.23974609375
+  pitch: 6.2998175621032715

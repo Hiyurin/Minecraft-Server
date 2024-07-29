@@ -5,7 +5,7 @@
 ############################################################
 
 # This is the config file for EssentialsX.
-# This config was generated for version 2.20.1.
+# This config was generated for version 2.21.0-dev+112-71f8c32-Folia.
 
 # If you want to use special characters in this document, such as accented letters, you MUST save the file as UTF-8, not ANSI.
 # If you receive an error when Essentials loads, ensure that:
@@ -24,24 +24,24 @@
 
 # A color code between 0-9 or a-f. Set to 'none' to disable.
 # In 1.16+ you can use hex color codes here as well. (For example, #613e1d is brown).
-ops-name-color: 'c'
+ops-name-color: 'none'
 
 # The character(s) to prefix all nicknames, so that you know they are not true usernames.
 # Users with essentials.nick.hideprefix will not be prefixed with the character(s)
-nickname-prefix: '.'
+nickname-prefix: '~'
 
 # The maximum length allowed in nicknames. The nickname prefix is not included in this.
-max-nick-length: 15
+max-nick-length: 50
 
 # A list of phrases that cannot be used in nicknames. You can include regular expressions here.
 # Users with essentials.nick.blacklist.bypass will be able to bypass this filter.
 nick-blacklist:
-- Notch
-- '^Dinnerbone'
+#- Notch
+#- '^Dinnerbone'
 
 # When this option is enabled, nickname length checking will exclude color codes in player names.
 # ie: "&6Notch" has 7 characters (2 are part of a color code), a length of 5 is used when this option is set to true
-ignore-colors-in-max-nick-length: true
+ignore-colors-in-max-nick-length: false
 
 # When this option is enabled, display names for hidden users will not be shown. This prevents players from being
 # able to see that they are online while vanished.
@@ -95,7 +95,7 @@ teleport-passenger-dismount: true
 teleport-cooldown: 30
 
 # The delay, in seconds, before a user actually teleports. If the user moves or gets attacked in this timeframe, the teleport is cancelled.
-teleport-delay: 3
+teleport-delay: 5
 
 # The delay, in seconds, a player can't be attacked by other players after they have been teleported by a command.
 # This will also prevent the player attacking other players.
@@ -212,6 +212,10 @@ socialspy-listen-muted-players: true
 # Whether social spy should spy on private messages or just the commands from the list above.
 # If false, social spy will only monitor commands from the list above.
 socialspy-messages: true
+
+# Whether social spy should use formatted display names which may include color.
+# If false, social spy will use only the actual player names.
+socialspy-uses-displaynames: true
 
 # The following settings listen for when a player changes worlds.
 # If you use another plugin to control speed and flight, you should change these to false.
@@ -444,8 +448,22 @@ debug: false
 # If you don't set this, the default locale of the server will be used.
 # For example, to set language to English, set locale to en, to use the file "messages_en.properties".
 # Don't forget to remove the # in front of the line.
-# For more information, visit http://wiki.ess3.net/wiki/Locale
+# For more information, visit https://essentialsx.net/wiki/Locale.html
 #locale: en
+
+# Should EssentialsX use player's language instead of the server's when sending messages?
+# This is useful if you want to use a different language for your server than for your players.
+# For example, if you have your server set to English and a player who speaks French, you can set this to true
+# and EssentialsX will send messages in French to the player and messages in the console as English.
+# If a player's language is not known, the server's language (or one defined above) will be used.
+per-player-locale: false
+
+# Change the default primary and secondary colours used in EssentialsX messages.
+# Some messages may use custom colours, which will need to be edited in the appropriate message files.
+# For more information on customising messages, see https://essentialsx.net/wiki/Locale.html
+message-colors:
+  primary: '#ffaa00'
+  secondary: '#ff5555'
 
 # Turn off god mode when people leave the server.
 remove-god-on-disconnect: false
@@ -460,7 +478,7 @@ auto-afk: 300
 # After this timeout in seconds, the user will be kicked from the server.
 # essentials.afk.kickexempt node overrides this feature.
 # Set to -1 for no timeout.
-auto-afk-kick: -1
+auto-afk-kick: 1800
 
 # Set this to true, if you want to freeze the player, if the player is AFK.
 # Other players or monsters can't push the player out of AFK mode then.
@@ -662,10 +680,15 @@ world-time-permissions: false
 # Note: If you have a command that starts with ^, then you can escape it using backslash (\). e.g. \^command: 123
 command-cooldowns:
 #  feed: 100 # 100 second cooldown on /feed command
-  '*': 30 # 5 Second cooldown on all commands
-  tpa: 1800
-  back: 180
-
+   '*': 10 # 10 Second cooldown on all commands
+   tpa: 60
+   tpahere: 60
+   back: 60
+   tpaccept: 5
+   tpdeny: 5
+   home: 60
+   sethome: 60
+   delhome: 10
 # Whether command cooldowns should be persistent past server shutdowns
 command-cooldown-persistence: true
 
@@ -690,7 +713,7 @@ delay-motd: 0
 # This is empty by default, for the latest list of valid commands see the latest source config.yml.
 default-enabled-confirm-commands:
 #- pay
-#- clearinventory
+- clearinventory
 
 # Where should Essentials teleport players when they are freed from jail?
 # You can set to "back" to have them teleported to where they were before they were jailed, "spawn" to have them
@@ -733,6 +756,10 @@ log-command-block-commands: true
 
 # Set the maximum speed for projectiles spawned with /fireball.
 max-projectile-speed: 8
+
+# Set the maximum amount of lore lines a user can set with the /itemlore command.
+# Users with the essentials.itemlore.bypass permission will be able to bypass this limit.
+max-itemlore-lines: 10
 
 # Should EssentialsX check for updates?
 # If set to true, EssentialsX will show notifications when a new version is available.
@@ -905,8 +932,8 @@ chat:
   # {TEAMPREFIX} - The sender's scoreboard team prefix.
   # {TEAMSUFFIX} - The sender's scoreboard team suffix.
 
-  #format: '<{DISPLAYNAME}> {MESSAGE}'
-  format: '&7[{PREFIX}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
+  format: '<{DISPLAYNAME}> {MESSAGE}'
+  #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
   #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
   group-formats:

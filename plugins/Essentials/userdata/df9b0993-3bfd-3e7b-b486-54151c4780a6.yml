@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 14.163.109.71
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1722235854928
+  login: 1722235148015
+money: '0'
+last-account-name: DucQuocXa1
+logoutlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: 3.2931851063490765
+  y: 64.0
+  z: 0.7780346594423739
+  yaw: -175.35028076171875
+  pitch: 8.100011825561523

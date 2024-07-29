@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 42.113.154.243
+ip-address: 58.187.21.165
 afk: false
 socialspy: false
 npc: false
@@ -11,31 +11,28 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1721308257433
+  lastteleport: 1722229573710
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1721309114190
-  login: 1721308045682
-  command-cooldowns:
-  - pattern: .*( .*)?
-    value: 1721308280246
-money: '0.0'
+  logout: 1722230342706
+  login: 1722229191252
+money: '0'
 last-account-name: .Novara2504
-lastlocation:
-  world: c7e828d6-76f5-401e-9616-c1b5b5c79019
-  world-name: world_the_end
-  x: -17.699055
-  y: 1.0
-  z: 275.30001
-  yaw: -151.75794982910156
-  pitch: 36.36683654785156
 logoutlocation:
-  world: 140385e3-6f64-4f88-a8c4-52e6794d7f00
+  world: 1a27ca10-4fb9-4a29-ba63-1246cfc9037c
+  world-name: world_nether
+  x: -617.55786
+  y: 53.0
+  z: -629.30774
+  yaw: -110.76160430908203
+  pitch: 15.983444213867188
+lastlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
   world-name: world
-  x: 40.109158
-  y: 66.0
-  z: -151.8459
-  yaw: 152.91842651367188
-  pitch: 29.05181884765625
+  x: -903.6586
+  y: 74.0
+  z: -140.66766
+  yaw: -73.81275177001953
+  pitch: 23.9931640625

@@ -1,0 +1,892 @@
+# Welcome to the DiscordSRV configuration file
+# 
+# Looking for the "BotToken" option? It has been moved into the connections.yaml
+# Need help with the format for Minecraft messages? https://github.com/Vankka/EnhancedLegacyText/wiki/Format
+# Need help with Discord markdown? https://support.discord.com/hc/en-us/articles/210298617
+# List of placeholders https://docs.discordsrv.com/ascension/placeholders/
+
+# Channels configuration
+#  
+# This is where everything related to in-game chat channels is configured.
+# The key of this option is the in-game channel name (the default keys are "global" and "default")
+# channel-ids and threads can be configured for all channels except "default"
+# "default" is a special section which has the default values for all channels unless they are specified (overridden) under the channel's own section
+# So if you don't specify a certain option under a channel's own section, the option will take its value from the "default" section
+channels:
+    global:
+        # The text and/or voice channel ids this in-game channel will forward to in Discord
+        channel-ids:
+        - 1260133453471547422
+        
+        # The threads that this in-game channel will forward to in Discord (this can be used instead of or with the channel-ids option)
+        threads:
+        -   # Specify the text or forum channel id and the name of the thread (the thread will be automatically created if it doesn't exist)
+            channel-id: 0
+            thread-name: "Minecraft Server chat bridge"
+            
+            # Should an existing thread with the same name be unarchived instead of creating a new thread every time
+            unarchive-existing: true
+            
+            # Does not effect forums
+            private-thread: false
+        minecraft-to-discord:
+            enabled: true
+            # Regex filters for Minecraft message contents (this is the %message% part of the "format" option)
+            content-regex-filters: {}
+            mentions:
+                # If role mentions should be rendered on Discord
+                #  
+                # The player needs one of the below permission to trigger notifications:
+                # - discordsrv.mention.roles.mentionable (for roles which have "Allow anyone to @mention this role" enabled)
+                # - discordsrv.mention.roles.all (to mention ALL roles except @everyone)
+                roles: true
+                
+                # If channel mentions should be rendered on Discord
+                channels: true
+                
+                # If user mentions should be rendered on Discord
+                # The player needs the discordsrv.mention.user permission to trigger a notification
+                # Requires the "Server Members Intent"
+                users: true
+                
+                # If uncached users should be looked up from the Discord API when a mention ("@something") occurs in chat.
+                # The player needs the discordsrv.mention.lookup.user permission for uncached members to be looked up
+                uncached-users: true
+                
+                # If @everyone and @here mentions should be enabled
+                # The player needs the discordsrv.mention.everyone permission to render the mention and trigger a notification
+                everyone: false
+        discord-to-minecraft:
+            # Requires the "Message Content Intent"
+            enabled: true
+            
+            # The Discord to Minecraft message format for regular users and bots
+            format: "[[color:#5865F2]Discord[color]] [hover:show_text:Username: @%user_tag% [italics:on][color:gray](Shift+Click to mention)[color][italics:off]\nRoles: %user_roles:', '|text:'[color:gray][italics:on]None[color][italics]'%][insert:@%user_tag%]%user_color%%user_effective_server_name%[color][insert][hover]%message_reply% » %message%%message_attachments%"
+            
+            # The Discord to Minecraft message format for webhook messages (if enabled)
+            webhook-format: "[[color:#5865F2]Discord[color]] [hover:show_text:Bot message]%user_effective_name%[hover] » %message%%message_attachments%"
+            
+            # Format for a single attachment in the %message_attachments% placeholder
+            attachment-format: " [hover:show_text:Open %file_name% in browser][click:open_url:%file_url%][color:green][[color:white]%file_name%[color:green]][color][click][hover]"
+            
+            # Format for the %message_reply% placeholder, when the message is a reply to another message
+            reply-format: " [hover:show_text:%message%][click:open_url:%message_jump_url%]replying to %user_color|text:''%%user_effective_server_name|user_effective_name%[color][click][hover]"
+            
+            # Regex filters for Discord message contents (this is the %message% part of the "format" option)
+            content-regex-filters:
+                \n{2,}: "\n"
+            
+            # Users, bots, roles and webhooks to ignore
+            ignores:
+                # User, bot and webhook ids to ignore
+                user-bot-and-webhook-ids:
+                    ids: []
+                    # true for whitelisting the provided ids, false for blacklisting them
+                    whitelist: false
+                
+                # Role ids for users and bots to ignore
+                role-ids:
+                    ids: []
+                    # true for whitelisting the provided ids, false for blacklisting them
+                    whitelist: false
+                
+                # If all bots (webhooks not included) should be ignored
+                bots: true
+                
+                # If all webhooks should be ignored (webhook messages sent by this DiscordSRV instance will always be ignored)
+                webhooks: true
+            
+            # The representations of Discord mentions in-game
+            mentions:
+                role:
+                    # The format shown in-game
+                    format: "%role_color%@%role_name%"
+                    
+                    # The format when the entity is deleted or can't be looked up
+                    unknown-format: "[color:#5865F2]@deleted-role"
+                channel:
+                    # The format shown in-game
+                    format: "[hover:show_text:Click to go to channel][click:open_url:%channel_jump_url%][color:#5865F2]#%channel_name%"
+                    
+                    # The format when the entity is deleted or can't be looked up
+                    unknown-format: "[color:#5865F2]#Unknown"
+                user:
+                    # The format shown in-game
+                    format: "[hover:show_text:Username: @%user_tag%\nRoles: %user_roles:', '|text:'[color:gray][italics:on]None[color][italics]'%][color:#5865F2]@%user_effective_server_name|user_effective_name%"
+                    
+                    # The format when the entity is deleted or can't be looked up
+                    unknown-format: "[color:#5865F2]@Unknown user"
+                message-url: "[hover:show_text:Click to go to message][click:open_url:%jump_url%][color:#5865F2]#%channel_name% > ..."
+                
+                # How should custom emoji be shown in-game:
+                # - hide: custom emoji will not be shown in-game
+                # - blank: custom emoji will only be shown in-game if it is rendered by a 3rd party plugin
+                # - name: shows the name of the custom emoji in-game (for example :discordsrv:), unless rendered by a 3rd party plugin
+                custom-emoji-behaviour: blank
+            
+            # How should unicode emoji be shown in-game:
+            # - hide: hides emojis in-game
+            # - show: shows emojis in-game as is (emojis may not be visible without resource packs)
+
+            unicode-emoji-behaviour: hide
+            
+            # The amount of milliseconds to delay processing Discord messages, if the message is deleted in that time it will not be processed.
+            # This can be used together with Discord moderation bots, to filter forwarded messages
+            delay-millis: 0
+        join-messages:
+            enabled: true
+            format:
+                embeds:
+                -   color: "#55ff55"
+                    author:
+                        name: "%player_display_name% joined"
+                        image-url: "%player_avatar_url%"
+            
+            # If the "discordsrv.silentjoin" permission should determine if join messages are sent
+            enable-silent-permission: true
+            
+            # Ignore if the player leaves within the given amount of milliseconds. This will delay sending the join message
+            ignore-if-left-within-m-s: 250
+            first-join:
+                enabled: true
+                format:
+                    embeds:
+                    -   color: "#ffaa00"
+                        author:
+                            name: "%player_display_name% joined for the first time"
+                            image-url: "%player_avatar_url%"
+        leave-messages:
+            enabled: true
+            format:
+                embeds:
+                -   color: "#ff5555"
+                    author:
+                        name: "%player_display_name% left"
+                        image-url: "%player_avatar_url%"
+            
+            # If the "discordsrv.silentquit" permission should determine if leave messages are sent
+            enable-silent-permission: true
+            
+            # Ignore if the player joined within the given amount of milliseconds
+            ignore-if-joined-within-m-s: 250
+        
+        # Advancement/Achievement message configuration
+        award-messages:
+            enabled: true
+            format:
+                embeds:
+                -   color: "#000001"
+                    author:
+                        name: "%award_title|text:'{player_name} made the advancement {award_name}'%"
+                        image-url: "%player_avatar_url%"
+        death-messages:
+            enabled: true
+            format:
+                embeds:
+                -   color: "#000001"
+                    author:
+                        name: "%message%"
+                        image-url: "%player_avatar_url%"
+        start-message:
+            enabled: true
+            format:
+                content: ":arrow_forward: **The server has started**"
+        stop-message:
+            enabled: true
+            format:
+                content: ":stop_button: **The server has stopped**"
+        
+        # Settings for synchronizing messages between the defined Discord channels and threads
+        mirroring:
+            # Requires the "Message Content Intent"
+            enabled: true
+            
+            # Users, bots, roles and webhooks to ignore when mirroring
+            ignores:
+                # User, bot and webhook ids to ignore
+                user-bot-and-webhook-ids:
+                    ids: []
+                    # true for whitelisting the provided ids, false for blacklisting them
+                    whitelist: false
+                
+                # Role ids for users and bots to ignore
+                role-ids:
+                    ids: []
+                    # true for whitelisting the provided ids, false for blacklisting them
+                    whitelist: false
+                
+                # If all bots (webhooks not included) should be ignored
+                bots: false
+                
+                # If all webhooks should be ignored (webhook messages sent by this DiscordSRV instance will always be ignored)
+                webhooks: true
+            
+            # The format of the username of mirrored messages
+            # It's recommended to include some special character if in-game messages use webhooks,
+            # in order to prevent Discord users and in-game players with the same name being grouped together
+            username-format: "%user_effective_server_name|user_effective_name% 🔃"
+            
+            # The format when a message is a reply.
+            # %message% will be replaced with the message content
+            # %message_jump_url% will be replaced with the url to the replied message in the channel the message is sent in
+            reply-format: "[In reply to %user_effective_server_name|user_effective_name%](%message_jump_url%)\n%message%"
+            
+            # Attachment related options
+            attachments:
+                # Maximum size (in kB) to download and re-upload, set to 0 for unlimited or -1 to disable re-uploading.
+                # The default value is -1 (disabled)
+                #  
+                # When this is enabled, files smaller than the specified limit are downloaded and then re-uploaded to each mirror channel individually.
+                # Please consider limiting the users allowed to attach files if this is enabled,
+                # as spam of large files may result in a lot of downstream and upstream data usage
+                maximum-size-kb: -1
+                
+                # If attachments should be placed into a embed in mirrored messages instead of re-uploading
+                embed-attachments: true
+        channel-locking:
+            channels:
+                # If the permissions should be taken from @everyone while the server is offline
+                everyone: false
+                
+                # Role ids for roles that should have the permissions taken while the server is offline
+                role-ids: []
+                
+                # If the "View Channel" permission should be taken from the specified roles
+                read: false
+                
+                # If the "Send Messages" permission should be taken from the specified roles
+                write: true
+                
+                # If the "Add Reactions" permission should be taken from the specified roles
+                add-reactions: true
+            threads:
+                # If the configured threads should be archived while the server is shutdown
+                archive: false
+                
+                # If the configured threads should be locked while the server is shutdown
+                lock: true
+    default:
+        minecraft-to-discord:
+            enabled: true
+            # Regex filters for Minecraft message contents (this is the %message% part of the "format" option)
+            content-regex-filters: {}
+            mentions:
+                # If role mentions should be rendered on Discord
+                #  
+                # The player needs one of the below permission to trigger notifications:
+                # - discordsrv.mention.roles.mentionable (for roles which have "Allow anyone to @mention this role" enabled)
+                # - discordsrv.mention.roles.all (to mention ALL roles except @everyone)
+                roles: true
+                
+                # If channel mentions should be rendered on Discord
+                channels: true
+                
+                # If user mentions should be rendered on Discord
+                # The player needs the discordsrv.mention.user permission to trigger a notification
+                # Requires the "Server Members Intent"
+                users: true
+                
+                # If uncached users should be looked up from the Discord API when a mention ("@something") occurs in chat.
+                # The player needs the discordsrv.mention.lookup.user permission for uncached members to be looked up
+                uncached-users: true
+                
+                # If @everyone and @here mentions should be enabled
+                # The player needs the discordsrv.mention.everyone permission to render the mention and trigger a notification
+                everyone: false
+        discord-to-minecraft:
+            # Requires the "Message Content Intent"
+            enabled: true
+            
+            # The Discord to Minecraft message format for regular users and bots
+            format: "[[color:#5865F2]Discord[color]] [hover:show_text:Username: @%user_tag% [italics:on][color:gray](Shift+Click to mention)[color][italics:off]\nRoles: %user_roles:', '|text:'[color:gray][italics:on]None[color][italics]'%][insert:@%user_tag%]%user_color%%user_effective_server_name%[color][insert][hover]%message_reply% » %message%%message_attachments%"
+            
+            # The Discord to Minecraft message format for webhook messages (if enabled)
+            webhook-format: "[[color:#5865F2]Discord[color]] [hover:show_text:Bot message]%user_effective_name%[hover] » %message%%message_attachments%"
+            
+            # Format for a single attachment in the %message_attachments% placeholder
+            attachment-format: " [hover:show_text:Open %file_name% in browser][click:open_url:%file_url%][color:green][[color:white]%file_name%[color:green]][color][click][hover]"
+            
+            # Format for the %message_reply% placeholder, when the message is a reply to another message
+            reply-format: " [hover:show_text:%message%][click:open_url:%message_jump_url%]replying to %user_color|text:''%%user_effective_server_name|user_effective_name%[color][click][hover]"
+            
+            # Regex filters for Discord message contents (this is the %message% part of the "format" option)
+            content-regex-filters:
+                \n{2,}: "\n"
+            
+            # Users, bots, roles and webhooks to ignore
+            ignores:
+                # User, bot and webhook ids to ignore
+                user-bot-and-webhook-ids:
+                    ids: []
+                    # true for whitelisting the provided ids, false for blacklisting them
+                    whitelist: false
+                
+                # Role ids for users and bots to ignore
+                role-ids:
+                    ids: []
+                    # true for whitelisting the provided ids, false for blacklisting them
+                    whitelist: false
+                
+                # If all bots (webhooks not included) should be ignored
+                bots: false
+                
+                # If all webhooks should be ignored (webhook messages sent by this DiscordSRV instance will always be ignored)
+                webhooks: true
+            
+            # The representations of Discord mentions in-game
+            mentions:
+                role:
+                    # The format shown in-game
+                    format: "%role_color%@%role_name%"
+                    
+                    # The format when the entity is deleted or can't be looked up
+                    unknown-format: "[color:#5865F2]@deleted-role"
+                channel:
+                    # The format shown in-game
+                    format: "[hover:show_text:Click to go to channel][click:open_url:%channel_jump_url%][color:#5865F2]#%channel_name%"
+                    
+                    # The format when the entity is deleted or can't be looked up
+                    unknown-format: "[color:#5865F2]#Unknown"
+                user:
+                    # The format shown in-game
+                    format: "[hover:show_text:Username: @%user_tag%\nRoles: %user_roles:', '|text:'[color:gray][italics:on]None[color][italics]'%][color:#5865F2]@%user_effective_server_name|user_effective_name%"
+                    
+                    # The format when the entity is deleted or can't be looked up
+                    unknown-format: "[color:#5865F2]@Unknown user"
+                message-url: "[hover:show_text:Click to go to message][click:open_url:%jump_url%][color:#5865F2]#%channel_name% > ..."
+                
+                # How should custom emoji be shown in-game:
+                # - hide: custom emoji will not be shown in-game
+                # - blank: custom emoji will only be shown in-game if it is rendered by a 3rd party plugin
+                # - name: shows the name of the custom emoji in-game (for example :discordsrv:), unless rendered by a 3rd party plugin
+                custom-emoji-behaviour: blank
+            
+            # How should unicode emoji be shown in-game:
+            # - hide: hides emojis in-game
+            # - show: shows emojis in-game as is (emojis may not be visible without resource packs)
+
+            unicode-emoji-behaviour: hide
+            
+            # The amount of milliseconds to delay processing Discord messages, if the message is deleted in that time it will not be processed.
+            # This can be used together with Discord moderation bots, to filter forwarded messages
+            delay-millis: 0
+        join-messages:
+            enabled: true
+            format:
+                embeds:
+                -   color: "#55ff55"
+                    author:
+                        name: "%player_display_name% joined"
+                        image-url: "%player_avatar_url%"
+            
+            # If the "discordsrv.silentjoin" permission should determine if join messages are sent
+            enable-silent-permission: true
+            
+            # Ignore if the player leaves within the given amount of milliseconds. This will delay sending the join message
+            ignore-if-left-within-m-s: 250
+            first-join:
+                enabled: true
+                format:
+                    embeds:
+                    -   color: "#ffaa00"
+                        author:
+                            name: "%player_display_name% joined for the first time"
+                            image-url: "%player_avatar_url%"
+        leave-messages:
+            enabled: true
+            format:
+                embeds:
+                -   color: "#ff5555"
+                    author:
+                        name: "%player_display_name% left"
+                        image-url: "%player_avatar_url%"
+            
+            # If the "discordsrv.silentquit" permission should determine if leave messages are sent
+            enable-silent-permission: true
+            
+            # Ignore if the player joined within the given amount of milliseconds
+            ignore-if-joined-within-m-s: 250
+        
+        # Advancement/Achievement message configuration
+        award-messages:
+            enabled: false
+            format:
+                embeds:
+                -   color: "#000001"
+                    author:
+                        name: "%award_title|text:'{player_name} made the advancement {award_name}'%"
+                        image-url: "%player_avatar_url%"
+        death-messages:
+            enabled: true
+            format:
+                embeds:
+                -   color: "#000001"
+                    author:
+                        name: "%message%"
+                        image-url: "%player_avatar_url%"
+        start-message:
+            enabled: true
+            format:
+                content: ":arrow_forward: **The server has started**"
+        stop-message:
+            enabled: true
+            format:
+                content: ":stop_button: **The server has stopped**"
+        
+        # Settings for synchronizing messages between the defined Discord channels and threads
+        mirroring:
+            # Requires the "Message Content Intent"
+            enabled: true
+            
+            # Users, bots, roles and webhooks to ignore when mirroring
+            ignores:
+                # User, bot and webhook ids to ignore
+                user-bot-and-webhook-ids:
+                    ids: []
+                    # true for whitelisting the provided ids, false for blacklisting them
+                    whitelist: false
+                
+                # Role ids for users and bots to ignore
+                role-ids:
+                    ids: []
+                    # true for whitelisting the provided ids, false for blacklisting them
+                    whitelist: false
+                
+                # If all bots (webhooks not included) should be ignored
+                bots: false
+                
+                # If all webhooks should be ignored (webhook messages sent by this DiscordSRV instance will always be ignored)
+                webhooks: true
+            
+            # The format of the username of mirrored messages
+            # It's recommended to include some special character if in-game messages use webhooks,
+            # in order to prevent Discord users and in-game players with the same name being grouped together
+            username-format: "%user_effective_server_name|user_effective_name% 🔃"
+            
+            # The format when a message is a reply.
+            # %message% will be replaced with the message content
+            # %message_jump_url% will be replaced with the url to the replied message in the channel the message is sent in
+            reply-format: "[In reply to %user_effective_server_name|user_effective_name%](%message_jump_url%)\n%message%"
+            
+            # Attachment related options
+            attachments:
+                # Maximum size (in kB) to download and re-upload, set to 0 for unlimited or -1 to disable re-uploading.
+                # The default value is -1 (disabled)
+                #  
+                # When this is enabled, files smaller than the specified limit are downloaded and then re-uploaded to each mirror channel individually.
+                # Please consider limiting the users allowed to attach files if this is enabled,
+                # as spam of large files may result in a lot of downstream and upstream data usage
+                maximum-size-kb: -1
+                
+                # If attachments should be placed into a embed in mirrored messages instead of re-uploading
+                embed-attachments: true
+        channel-locking:
+            channels:
+                # If the permissions should be taken from @everyone while the server is offline
+                everyone: false
+                
+                # Role ids for roles that should have the permissions taken while the server is offline
+                role-ids: []
+                
+                # If the "View Channel" permission should be taken from the specified roles
+                read: false
+                
+                # If the "Send Messages" permission should be taken from the specified roles
+                write: true
+                
+                # If the "Add Reactions" permission should be taken from the specified roles
+                add-reactions: true
+            threads:
+                # If the configured threads should be archived while the server is shutdown
+                archive: false
+                
+                # If the configured threads should be locked while the server is shutdown
+                lock: true
+linked-accounts:
+    # Should linked accounts be enabled
+    enabled: true
+    
+    # The linked account provider
+    #  
+    #  - auto: Uses "minecraftauth" if the connections.yaml permits it and the server is in online mode or using ip forwarding, otherwise "%4"
+    #  - minecraftauth: Uses minecraftauth.me as the linked account provider (offline and (non-linked) bedrock players cannot link using this method)
+    #  - storage: Use the configured database for linked accounts
+    provider: auto
+presence-updater:
+    # The presence to use while the server is starting
+    use-starting-presence: true
+    starting-presence:
+        # Valid options: online, idle, do_not_disturb, invisible
+        status: do_not_disturb
+        
+        # This may be prefixed by one of the following to specify the activity type: "playing", "listening", "watching", "competing in"
+        # You can prefix the value with "streaming" and a YouTube or Twitch link to use the Streaming activity type
+        activity: "Starting..."
+    
+    # The presence to use while the server is stopping
+    use-stopping-presence: true
+    stopping-presence:
+        # Valid options: online, idle, do_not_disturb, invisible
+        status: idle
+        
+        # This may be prefixed by one of the following to specify the activity type: "playing", "listening", "watching", "competing in"
+        # You can prefix the value with "streaming" and a YouTube or Twitch link to use the Streaming activity type
+        activity: "Stopping..."
+    
+    # The amount of seconds between presence updates
+    # Minimum value: 30
+    updater-rate-in-seconds: 90
+    presences:
+    -   # Valid options: online, idle, do_not_disturb, invisible
+        status: online
+        
+        # This may be prefixed by one of the following to specify the activity type: "playing", "listening", "watching", "competing in"
+        # You can prefix the value with "streaming" and a YouTube or Twitch link to use the Streaming activity type
+        activity: "playing Minecraft"
+timed-updater:
+    voice-channels:
+    -   # The channel IDs.
+        # The bot will need the "View Channel", "Manage Channels" and "Connection" permissions for the provided channels
+        channel-ids: []
+        
+        # The format for the channel name(s), placeholders are supported.
+        name-format: ""
+        
+        # The time between updates in minutes.
+        # Minimum value: 10
+        time-minutes: 10
+    text-channels:
+    -   # The channel IDs.
+        # The bot will need the "View Channel" and "Manage Channels" permissions for the provided channels
+        channel-ids: []
+        
+        # The format for the channel name(s), placeholders are supported.
+        # If this is blank, the name will not be updated
+        name-format: ""
+        
+        # The format for the channel topic(s), placeholders are supported.
+        # If this is blank, the topic will not be updated
+        topic-format: ""
+        
+        # The time between updates in minutes.
+        # Minimum value: 10
+        time-minutes: 10
+
+# Configuration options for group-role synchronization
+group-sync:
+    # Group-Role pairs for group synchronization
+    #  
+    # If you are not using LuckPerms and want to use Minecraft -> Discord synchronization, you must specify timed synchronization
+    pairs:
+    -   # The case-sensitive group name from your permissions plugin
+        group-name: ""
+        
+        # The Discord role id
+        role-id: 0
+        
+        # The LuckPerms "server" context value, used when adding, removing and checking the groups of players.
+        # Make this blank ("") to use the current server's value, or "global" to not use the context
+        server-context: "global"
+        
+        # The direction to synchronize in.
+        # Valid options: bidirectional, minecraft_to_discord, discord_to_minecraft
+        direction: bidirectional
+        
+        # Timed resynchronization
+        timer:
+            # If timed synchronization is enabled
+            enabled: true
+            
+            # The amount of minutes between timed synchronization cycles
+            cycle-time: 5
+        
+        # Decides which side takes priority when using timed synchronization or the resync command and there are differences
+        # Valid options: minecraft, discord
+        tie-breaker: minecraft
+
+# Configuration options for ban synchronization
+ban-sync:
+    # The id for the Discord server where the bans should be synced from/to
+    server-id: 0
+    
+    # The reason applied when creating new bans in Minecraft
+    game-ban-reason-format: "%punishment_reason%"
+    
+    # The punisher applied when creating new bans in Minecraft
+    game-punisher-format: "%user_color%@%user_name%"
+    
+    # The kick reason when a ban is applied to a online player
+    game-kick-reason: "&cYou have been banned for &f%punishment_reason% &cby &f%punishment_punisher%"
+    
+    # The reason applied when creating new bans in Discord
+    discord-ban-reason-format: "Banned by %punishment_punisher% in Minecraft for %punishment_reason%, ends: %punishment_until:'YYYY-MM-dd HH:mm:ss zzz'|text:'Never'%"
+    
+    # The reason applied when removing bans in Discord
+    discord-unban-reason-format: "Unbanned in Minecraft"
+    
+    # The amount of hours to delete Discord messages, when syncing bans from Minecraft to Discord
+    discord-message-hours-to-delete: 0
+    
+    # Resync upon linking
+    resync-upon-linking: true
+    
+    # The direction to synchronize in.
+    # Valid options: bidirectional, minecraft_to_discord, discord_to_minecraft
+    direction: bidirectional
+    
+    # Timed resynchronization
+    timer:
+        # If timed synchronization is enabled
+        enabled: true
+        
+        # The amount of minutes between timed synchronization cycles
+        cycle-time: 5
+    
+    # Decides which side takes priority when using timed synchronization or the resync command and there are differences
+    # Valid options: minecraft, discord
+    tie-breaker: minecraft
+
+# In-game command configuration
+game-command:
+    # If the /discord command should be set by DiscordSRV
+    use-discord-command: true
+    
+    # If /link should be used as a alias for /discord link
+    use-link-alias: false
+    
+    # The Discord command response format (/discord), player placeholders may be used
+    discord-format: "[click:open_url:%discord_invite%][color:aqua][bold:on]Click here [color][bold][color:green]to join our Discord server!"
+
+# Discord command configuration
+discord-command:
+    execute:
+        enabled: true
+        # If the command output should only be visible to the user who ran the command
+        ephemeral: true
+        
+        # The mode for the command output, available options are:
+        # - markdown: Regular Discord markdown
+        # - ansi: A colored ansi code block
+        # - plain: Plain text
+        # - code_block: Plain code block
+        # - off: No command output
+        output-mode: markdown
+        
+        # At least one condition has to match to allow execution
+        execution-conditions:
+        -   # The role and user ids that should be allowed to run the commands specified in this condition
+            role-and-user-ids: []
+            
+            # true for blacklist (blocking commands), false for whitelist (allowing commands)
+            blacklist: false
+            
+            # The commands and/or patterns that are allowed/blocked.
+            # The command needs to start with input, this will attempt to normalize command aliases where possible (for the main command)
+            # If the command start and ends with /, the input will be treated as a regular expression (regex) and it will pass if it matches the entire command
+            commands:
+            - "say"
+            - "/gamemode(?: (?:survival|spectator)(?: .+)?)?/"
+        
+        # If commands should be suggested while typing
+        # Suggestions go through the server's main thread (on servers with a main thread) to ensure compatability.
+        suggest: true
+        
+        # If suggestions should be filtered based on the "filters" option
+        filter-suggestions: true
+
+# Options for console channel(s) and/or thread(s)
+console:
+-   # The console channel or thread
+    channel:
+        # Specify the text or forum channel id and the name of the thread (the thread will be automatically created if it doesn't exist)
+        channel-id: 0
+        thread-name: ""
+        
+        # Should an existing thread with the same name be unarchived instead of creating a new thread every time
+        unarchive-existing: true
+        
+        # Does not effect forums
+        private-thread: false
+    appender:
+        # The format for log lines
+        line-format: "[%log_time:'ccc HH:mm:ss zzz'%] [%log_level%] [%logger_name%] %message%"
+        
+        # The mode for the console output, available options are:
+        # - off: Turn off console appending
+        # - ansi: A colored ansi code block
+        # - log: A "accesslog" code block
+        # - diff: A "diff" code block highlighting warnings and errors with different colors
+        # - markdown: Plain text with bold, italics, strikethrough and underlining
+        # - plain: Plain text code block
+        # - plain_content: Plain text
+        output-mode: ansi
+        
+        # In "diff" mode, should exception lines have the prefix character as well
+        diff-exceptions: true
+        
+        # If urls should have embeds disabled
+        disable-link-embeds: true
+        
+        # Avoids sending new messages by editing the most recent message until it reaches it's maximum length
+        use-editing: true
+        
+        # If console messages should be silent, not causing a notification
+        silent-messages: true
+        
+        # A list of log levels to whitelist or blacklist
+        levels:
+            levels:
+            - "DEBUG"
+            - "TRACE"
+            blacklist: true
+        
+        # A list of logger names to whitelist or blacklist, use "NONE" for log messages with no logger name
+        loggers:
+            loggers:
+            - "ExcludedLogger"
+            blacklist: true
+    command-execution:
+        # If command execution in this console channel is enabled
+        # Requires the "Message Content Intent"
+        enabled: true
+        
+        # At least one condition has to match to allow execution
+        execution-conditions:
+        -   # The role and user ids that should be allowed to run the commands specified in this condition
+            role-and-user-ids: []
+            
+            # true for blacklist (blocking commands), false for whitelist (allowing commands)
+            blacklist: false
+            
+            # The commands and/or patterns that are allowed/blocked.
+            # The command needs to start with input, this will attempt to normalize command aliases where possible (for the main command)
+            # If the command start and ends with /, the input will be treated as a regular expression (regex) and it will pass if it matches the entire command
+            commands:
+            - "list"
+            - "whitelist"
+        -   # The role and user ids that should be allowed to run the commands specified in this condition
+            role-and-user-ids: []
+            
+            # true for blacklist (blocking commands), false for whitelist (allowing commands)
+            blacklist: true
+            
+            # The commands and/or patterns that are allowed/blocked.
+            # The command needs to start with input, this will attempt to normalize command aliases where possible (for the main command)
+            # If the command start and ends with /, the input will be treated as a regular expression (regex) and it will pass if it matches the entire command
+            commands:
+            - "?"
+            - "op"
+            - "deop"
+            - "execute"
+        
+        # If a command is inputted starting with /, a warning response will be given if this is enabled
+        enable-slash-warning: true
+
+# Configuration for the %discord_invite% placeholder. The below options will be attempted in the order they are in
+invite:
+    # Manually enter a invite url here, if this isn't set this is ignored and the options below will take effect
+    invite-url: ""
+    
+    # The server id to automatically grab the vanity url from or to generate the invite to.
+    # If this is not specified and the bot is private and only in a single server, it will use that
+    server-id: 0
+    
+    # If the bot should automatically use the vanity invite url from the automatically determined server, if one is set
+    attempt-to-use-vanity-url: true
+    
+    # If the bot should automatically create a invite to the automatically determined server
+    # The bot will only attempt to do so if it has permission to "Create Invite"
+    # The server must also have a rules channel (available for community servers) or default channel (automatically determined by Discord)
+    auto-create-invite: false
+messages:
+    # The language code for the default language, if left blank the system default will be used.
+    # This should be in the ISO 639-1 format or ISO 639-1 (for example "en"), a underscore and a ISO 3166-1 country code to specify dialect (for example "pt_BR")
+    default-language: "vi"
+    
+    # If there should be a messages file per language (based on the player's or user's language), otherwise using the default
+    multiple: false
+    
+    # If all languages provided with DiscordSRV should be loaded into the messages directory, only functions when "multiple" is set to true
+    load-all-defaults: true
+required-linking:
+    enabled: false
+    kick:
+        # The event to use for kick.
+        # Available events: AsyncPlayerPreLoginEvent (preferred), PlayerLoginEvent, PlayerJoinEvent
+        event: "AsyncPlayerPreLoginEvent"
+        
+        # The event priority to use for the kick
+        priority: "NORMAL"
+    
+    # How the player should be blocked from joining the server.
+    # Available options: kick, freeze
+    action: kick
+    
+    # A list of uuids that are allowed to bypass these requirements
+    bypass-uuids:
+    - "6c983d46-0631-48b8-9baf-5e33eb5ffec4"
+    
+    # Requirements players must meet to be pass requirements
+    # Only one option has to pass, for example ["TwitchSubscriber()", "DiscordRole(...)"] allows twitch subscribers and users with the specified role to play
+    # while ["TwitchSubscriber() && DiscordRole(...)"] only allows twitch subscribers with the specified role to play
+    #  
+    # Valid values are:
+    # DiscordServer(Server ID)
+    # DiscordBoosting(Server ID)
+    # DiscordRole(Role ID)
+    #  
+    # The following are available if you're using MinecraftAuth.me for linked accounts and a MinecraftAuth.me token is specified in the connections.yaml:
+    # PatreonSubscriber() or PatreonSubscriber(Tier Title)
+    # GlimpseSubscriber() or GlimpseSubscriber(Level Name)
+    # TwitchFollower()
+    # TwitchSubscriber() or TwitchSubscriber(Tier)
+    # YouTubeSubscriber()
+    # YouTubeMember() or YouTubeMember(Tier)
+    #  
+    # The following operators are available:
+    # && = and, for example: "DiscordServer(...) && TwitchFollower()"
+    # || = or, for example "DiscordBoosting(...) || YouTubeMember()"
+    # You can also use brackets () to clear ambiguity, for example: "DiscordServer(...) && (TwitchSubscriber() || PatreonSubscriber())"
+    # allows a member of the specified Discord server that is also a twitch or patreon subscriber to join the server
+    additional-requirements: []
+
+# Configuration for the %player_avatar_url% placeholder
+avatar-provider:
+    # Whether to let DiscordSRV decide an appropriate avatar URL automatically
+    # This will result in appropriate head renders being provided for Bedrock players (when using Floodgate) and Offline Mode players (via username).
+    auto-decide-avatar-url: true
+    
+    # The template for URLs of player avatars
+    # This will be used for official Java players only if %1 is set to true
+    # This will be used ALWAYS if %1 is set to false
+    avatar-url-template: "https://crafatar.com/avatars/%player_uuid_short%.png?size=128&overlay#%player_skin_texture_id%"
+integrations:
+    # Plugin integrations that should be disabled. Specify the names or ids of plugins to disable integrations for
+    disabled-integrations: []
+member-caching:
+    # If linked users' members should be cached
+    # Requires the "Server Members Intent"
+    linked-users: true
+    
+    # If all members should be cached
+    # Requires the "Server Members Intent"
+    all: false
+    
+    # If members should be cached at startup
+    # Requires the "Server Members Intent"
+    chunk: true
+    
+    # Filter for which servers should be cached at startup
+    chunking-server-filter:
+        # If the ids option acts as a blacklist, otherwise it is a whitelist
+        blacklist: true
+        ids: []
+
+# Options for diagnosing DiscordSRV, you do not need to touch these options during normal operation
+debug:
+    # If debug messages should be logged into the config
+    log-to-console: false
+    
+    # Additional levels to log
+    # Example value: {"AWARD_LISTENER":["TRACE"]}
+    additional-levels: {}

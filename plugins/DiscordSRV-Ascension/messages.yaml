@@ -1,0 +1,48 @@
+minecraft:
+    # Generic
+    no-permission: "&cXin lỗi, nhưng bạn không có quyền sử dụng lệnh đó"
+    please-specify-player: "&cVui lòng chỉ định người chơi Minecraft"
+    please-specify-user: "&cVui lòng chỉ định người dùng Discord"
+    please-specify-player-or-user: "&cVui lòng chỉ định người chơi Minecraft hoặc người dùng Discord"
+    player-not-found: "&cKhông tìm thấy người chơi Minecraft"
+    user-not-found: "&cKhông tìm thấy người dùng Discord"
+    unable-to-check-linking-status: "&cKhông thể kiểm tra trạng thái liên kết, vui lòng thử lại sau"
+    discord-user-linked-to: "&a[hover:show_text:%user_id%][click:copy_to_clipboard:%user_id%]@%user_name%[click][hover] &được liên kết với &a[hover:show_text:%player_uuid%][click:copy_to_clipboard:%player_uuid%]%player_name|text:'<Unknown>'%[click][hover]"
+    discord-user-unlinked: "&a[hover:show_text:%user_id%][click:copy_to_clipboard:%user_id%]@%user_name%[click][hover] &ckhông được liên kết"
+    minecraft-player-linked-to: "&a[hover:show_text:%player_uuid%][click:copy_to_clipboard:%player_uuid%]%player_name|text:'<Unknown>'%[click][hover] &được liên kết với &a[hover:show_text:%user_id%][click:copy_to_clipboard:%user_id%]@%user_name%[click][hover]"
+    minecraft-player-unlinked: "&a[hover:show_text:%player_uuid%][click:copy_to_clipboard:%player_uuid%]%player_name|text:'<Unknown>'%[click][hover] &ckhông được liên kết"
+    
+    # /discord link
+    already-linked1st: "&cBạn đã được liên kết"
+    please-specify-player-and-user-to-link: "&cVui lòng chỉ định người chơi Minecraft và người dùng Discord để liên kết"
+    player-already-linked3rd: "&cNgười chơi đó đã được liên kết"
+    user-already-linked3rd: "&cNgười chơi đó đã được liên kết"
+    please-wait-before-running-that-command-again: "&cVui lòng đợi trước khi chạy lại lệnh đó"
+    unable-to-link-at-this-time: "&cKhông thể kiểm tra trạng thái liên kết, vui lòng thử lại sau"
+    checking-link-status: "&bĐang kiểm tra trạng thái liên kết..."
+    now-linked1st: "&aBây giờ bạn đã được liên kết!"
+    now-linked3rd: "&aLiên kết được tạo thành công &b(&a[hover:show_text:%player_uuid%][click:copy_to_clipboard:%player_uuid%]%player_name|text:'<Unknown>'%[click][hover]&b và &a[hover:show_text:%user_id%][click:copy_to_clipboard:%user_id%]@%user_name%[click][hover]&b)"
+    minecraft-auth-linking: "&bVui lòng truy cập &f[click:open_url:%minecraftauth_link%][hover:show_text:Click to open]%minecraftauth_link_simple%[click]&b để liên kết tài khoản của bạn thông qua &fMinecraftAuth"
+    
+    # /discord unlink
+    unlinked: "&aTài khoản đã hủy liên kết"
+discord:
+    # Generic
+    please-specify-player: "🗒️ Vui lòng chỉ định người chơi Minecraft"
+    please-specify-user: "🗒️ Vui lòng chỉ định người dùng Discord"
+    please-specify-player-or-user: "🗒️ Vui lòng chỉ định người chơi Minecraft hoặc người dùng Discord"
+    player-not-found: "❌ Không tìm thấy người chơi Minecraft"
+    user-not-found: "❌ Không tìm thấy người dùng Discord"
+    unable-to-check-linking-status: "❌ Không thể kiểm tra trạng thái liên kết, vui lòng thử lại sau"
+    discord-user-linked-to: "✅ **%user_name%** (<@%user_id%>) được liên kết với **%player_name%** (%player_uuid%)"
+    discord-user-unlinked: "❌ **%user_name%** (<@%user_id%>) __không được liên kết__"
+    minecraft-player-linked-to: "✅ **%player_name%** (%player_uuid%) được liên kết với **%user_name%** (<@%user_id%>)"
+    minecraft-player-unlinked: "❌ **%player_name%** (%player_uuid%) __không được liên kết__"
+    
+    # /discord link
+    player-already-linked3rd: "❌ Người chơi Minecraft đó đã được liên kết"
+    user-already-linked3rd: "❌ Người dùng Discord đó đã được liên kết"
+    now-linked3rd: "✅ Liên kết được tạo thành công\n**%player_name%** (%player_uuid%) và **%user_name%** (<@%user_id%>)"
+    
+    # /discord unlink
+    unlinked: "✅ Tài khoản đã hủy liên kết"

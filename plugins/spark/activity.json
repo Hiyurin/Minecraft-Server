@@ -1,0 +1,26 @@
+[
+  {
+    "user": {
+      "type": "other",
+      "name": "CONSOLE"
+    },
+    "time": 1722173645582,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/NaaREtz4MZ"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "CONSOLE"
+    },
+    "time": 1722173364960,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/ht2j0gcyvo"
+    }
+  }
+]

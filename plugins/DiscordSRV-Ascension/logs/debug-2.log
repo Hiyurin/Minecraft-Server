@@ -1,0 +1,491 @@
+[Sun 11:35:53 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.event.bus.EventBusImpl subscribed
+[Sun 11:35:53 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.module.ModuleManager subscribed
+[Sun 11:35:53 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.discord.connection.jda.JDAConnectionManager subscribed
+[Sun 11:35:53 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.update.UpdateChecker subscribed
+[Sun 11:35:53 UTC] [WARNING] 
+[Sun 11:35:53 UTC] [WARNING] +-----------------------------------------+
+[Sun 11:35:53 UTC] [WARNING] This is a testing version of DiscordSRV
+[Sun 11:35:53 UTC] [WARNING] Limited or no support will be provided
+[Sun 11:35:53 UTC] [WARNING] EVERYTHING is subject to change.
+[Sun 11:35:53 UTC] [WARNING] +-----------------------------------------+
+[Sun 11:35:53 UTC] [WARNING] 
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule registered
+[Sun 11:35:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule subscribed
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule enabled
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.ban.BukkitBanModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.VaultIntegration registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.PlaceholderAPIIntegration registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.EssentialsXIntegration registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.ChattyChatIntegration registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.GriefPreventionChatIntegration registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.LunaChatIntegration registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] Failed to load integration: com.discordsrv.bukkit.integration.chat.McMMOChatIntegration (Integration likely not installed or using wrong version)
+java.lang.NoClassDefFoundError: com/gmail/nossr50/mcmmo/kyori/adventure/text/Component
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:421)
+	at java.base/java.lang.Class.forName(Class.java:412)
+	at com.discordsrv.common.AbstractDiscordSRV.registerIntegration(AbstractDiscordSRV.java:445)
+	at com.discordsrv.bukkit.BukkitDiscordSRV.enable(BukkitDiscordSRV.java:207)
+	at com.discordsrv.common.AbstractDiscordSRV.runEnable(AbstractDiscordSRV.java:535)
+	at com.discordsrv.common.bootstrap.LifecycleManager.loadAndEnable(LifecycleManager.java:72)
+	at com.discordsrv.bukkit.DiscordSRVBukkitBootstrap.onEnable(DiscordSRVBukkitBootstrap.java:70)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at DiscordSRV-Bukkit-3.0.0-SNAPSHOT-8077555.jar//com.discordsrv.dependencies.dev.vankka.mcdependencydownload.bukkit.loader.BukkitLoader.onEnable(BukkitLoader.java:79)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288)
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202)
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:632)
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:581)
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:287)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1218)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:350)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: com.gmail.nossr50.mcmmo.kyori.adventure.text.Component
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 20 more
+
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.TownyChatIntegration registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.chat.VentureChatIntegration registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.bansync.BanSyncModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.console.ConsoleModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.ChannelLockingModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.TimedUpdaterModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.discord.DiscordCommandModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.game.GameCommandModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.GlobalChannelLookupModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.discord.api.DiscordAPIEventModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.groupsync.GroupSyncModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.JoinMessageModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.LeaveMessageModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.invite.DiscordInviteModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.LinkingModule registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.presence.PresenceUpdaterModule registered
+[Sun 11:35:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.presence.PresenceUpdaterModule subscribed
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.presence.PresenceUpdaterModule enabled
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.integration.LuckPermsIntegration registered
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] Reloading modules (DiscordSRV ready = false)
+[Sun 11:35:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule unsubscribed
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.requiredlinking.BukkitRequiredLinkingModule disabled
+[Sun 11:35:54 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.console.ConsoleModule subscribed
+[Sun 11:35:54 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.console.ConsoleModule enabled
+[Sun 11:35:54 UTC] [DEBUG] [CONSOLE] Skipping a console handler due to lack of channel
+[Sun 11:35:54 UTC] [DEBUG] [CONSOLE] 0 console handlers active
+[Sun 11:36:00 UTC] [WARNING] [UPDATES] DiscordSRV is outdated by 3 builds. Get the latest version from -
+[Sun 11:36:00 UTC] [INFO] Using H2 as storage
+[Sun 11:36:01 UTC] [INFO] Storage connection successfully established
+[Sun 11:36:01 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.impl.StorageLinker subscribed
+[Sun 11:36:01 UTC] [INFO] Using storage for linked accounts
+[Sun 11:36:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa491ccba50211d-HKG]
+[Sun 11:36:06 UTC] [DEBUG] [JDA] Caching bucket hash GET/users/@me -> 78bb8553d9352a5a2f89f9def401287a
+[Sun 11:36:06 UTC] [INFO] [JDA] Login Successful!
+[Sun 11:36:06 UTC] [DEBUG] [JDA] Creating new worker handle for shard pool 0
+[Sun 11:36:06 UTC] [DEBUG] [JDA] Running worker
+[Sun 11:36:06 UTC] [DEBUG] [JDA] Running connect node for shard JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[Sun 11:36:07 UTC] [INFO] [JDA] Connected to WebSocket
+[Sun 11:36:07 UTC] [DEBUG] [JDA] Connected with gateway intents: 1000001001000011
+[Sun 11:36:07 UTC] [DEBUG] [JDA] Sending Identify-packet...
+[Sun 11:36:07 UTC] [DEBUG] [JDA] Got HELLO packet (OP 10). Initializing keep-alive.
+[Sun 11:36:07 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Custom Status","state":"Starting...","type":4}],"afk":false,"since":1722166567698,"status":"dnd"}}
+[Sun 11:36:08 UTC] [DEBUG] [JDA] Setting incomplete count to 2
+[Sun 11:36:08 UTC] [DEBUG] [JDA] Starting 75 second timeout for 2 guilds
+[Sun 11:36:08 UTC] [DEBUG] [JDA] Sending chunking requests for 1 guilds
+[Sun 11:36:08 UTC] [DEBUG] [JDA] Sending chunking requests for 1 guilds
+[Sun 11:36:08 UTC] [DEBUG] [JDA] Sending chunk/sync request {"query":"","guild_id":1243911654287085669,"limit":0}
+[Sun 11:36:08 UTC] [DEBUG] [JDA] Sending chunk/sync request {"query":"","guild_id":1053873232907862106,"limit":0}
+[Sun 11:36:08 UTC] [DEBUG] [JDA] Received member chunk for guild id: 1243911654287085669 size: 49 index: 0/1
+[Sun 11:36:08 UTC] [DEBUG] [JDA] Finished setup for guild 1243911654287085669 firing cached events 0
+[Sun 11:36:09 UTC] [DEBUG] [JDA] Received member chunk for guild id: 1053873232907862106 size: 1000 index: 0/2
+[Sun 11:36:09 UTC] [DEBUG] [JDA] Received member chunk for guild id: 1053873232907862106 size: 291 index: 1/2
+[Sun 11:36:09 UTC] [INFO] [JDA] Finished Loading!
+[Sun 11:36:09 UTC] [DEBUG] [JDA] Finished setup for guild 1053873232907862106 firing cached events 0
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] Reloading modules (DiscordSRV ready = true)
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType enabled
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.ban.BukkitBanModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.VaultIntegration enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.integration.PlaceholderAPIIntegration subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.PlaceholderAPIIntegration enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.integration.EssentialsXIntegration subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.EssentialsXIntegration enabled
+[Sun 11:36:09 UTC] [DEBUG] [CONSOLE] Skipping a console handler due to lack of channel
+[Sun 11:36:09 UTC] [DEBUG] [CONSOLE] 0 console handlers active
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.ChannelLockingModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.command.discord.DiscordCommandModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.discord.DiscordCommandModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.game.GameCommandModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [TRANSLATION_LOADER] Found 6770 Minecraft translations for en_us
+[Sun 11:36:09 UTC] [DEBUG] [COMMAND_HANDLER] Registering command discordsrv with commodore
+[Sun 11:36:09 UTC] [DEBUG] [COMMAND_HANDLER] PluginCommand available for "discordsrv"
+[Sun 11:36:09 UTC] [DEBUG] [COMMAND_HANDLER] Registering command discord with commodore
+[Sun 11:36:09 UTC] [DEBUG] [COMMAND_HANDLER] Registered command "discord" in CommandMap successfully
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.AwardMessageModule registered
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.channel.GlobalChannelLookupModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.GlobalChannelLookupModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.AwardMessageModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.AwardMessageModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.DeathMessageModule registered
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.DeathMessageModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.DeathMessageModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.discord.api.DiscordAPIEventModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.discord.api.DiscordAPIEventModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.JoinMessageModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.JoinMessageModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.LeaveMessageModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.LeaveMessageModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.invite.DiscordInviteModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.invite.DiscordInviteModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [INVITE] Bot is in 2 servers, not automatically determining invites
+[Sun 11:36:09 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule subscribed
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.LinkingModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.integration.LuckPermsIntegration enabled
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] Enabling modules (DiscordSRV ready = true)
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StartMessageModule registered
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StartMessageModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StopMessageModule registered
+[Sun 11:36:09 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StopMessageModule enabled
+[Sun 11:36:09 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Custom Status","state":"Starting...","type":4}],"afk":false,"since":1722166569521,"status":"dnd"}}
+[Sun 11:36:09 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Minecraft","type":0}],"afk":false,"since":1722166569577,"status":"online"}}
+[Sun 11:36:10 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa491e40a14211d-HKG]
+[Sun 11:36:10 UTC] [DEBUG] [JDA] Caching bucket hash POST/channels/{channel_id}/messages -> 3df15bae86f6647dd4dfcbd5c6949480
+[Sun 11:36:31 UTC] [DEBUG] [JDA] Removed 4 expired buckets
+[Sun 11:46:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4a0ba8c4c850c-HKG]
+[Sun 11:46:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 11:52:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4aa888fb15dec-HKG]
+[Sun 11:53:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 11:54:13 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4ac55ae4c20f9-HKG]
+[Sun 11:54:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 11:57:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4b1c2a90d84f3-HKG]
+[Sun 11:57:55 UTC] [DEBUG] [JDA] Caching bucket hash GET/channels/{channel_id}/webhooks -> a5823fec22cce7359b3a2bc470f87f64
+[Sun 11:57:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4b1c82a7584f3-HKG]
+[Sun 11:57:56 UTC] [DEBUG] [JDA] Caching bucket hash POST/webhooks/{webhook_id}/{token} -> 3d2712a9e4fe17cc9d3fed4a8e672e5f
+[Sun 11:58:01 UTC] [DEBUG] [JDA] Removed 4 expired buckets
+[Sun 12:02:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4b8153904096a-HKG]
+[Sun 12:02:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:23:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4d6cbf9800ec0-HKG]
+[Sun 12:23:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:25:10 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4d9ac99210f2c-HKG]
+[Sun 12:25:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4da131da12398-HKG]
+[Sun 12:25:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:25:47 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4da955876b451-HKG]
+[Sun 12:26:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:26:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4db18fb59b46c-HKG]
+[Sun 12:26:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:28:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4de7c1e17108e-HKG]
+[Sun 12:28:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:28:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4df231f9010ac-HKG]
+[Sun 12:29:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:29:33 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4e01948f55dd6-HKG]
+[Sun 12:30:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:30:24 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4e158fc700470-HKG]
+[Sun 12:30:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:30:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4e1b3dca2098a-HKG]
+[Sun 12:31:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4e23aef1721d6-HKG]
+[Sun 12:31:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:45:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4f73f2943042c-HKG]
+[Sun 12:45:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:49:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4fd306b2b1fc1-HKG]
+[Sun 12:49:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 12:51:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa4ffb38f2407a9-HKG]
+[Sun 12:51:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa50035dbf78b3f-HKG]
+[Sun 12:51:31 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 12:58:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa509f1be2d5def-HKG]
+[Sun 12:58:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:02:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa510579c75099d-HKG]
+[Sun 13:02:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:03:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa511c75f9b0457-HKG]
+[Sun 13:03:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:04:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa512c10a565dd9-HKG]
+[Sun 13:04:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:05:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa514763bd1b46c-HKG]
+[Sun 13:05:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:05:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa514e0ccef5e01-HKG]
+[Sun 13:06:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:06:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa516a8697404b8-HKG]
+[Sun 13:07:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:07:09 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5172fc95585af-HKG]
+[Sun 13:07:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:08:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5186e6cb52112-HKG]
+[Sun 13:08:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:08:07 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5189899392112-HKG]
+[Sun 13:08:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa518cd1ce22112-HKG]
+[Sun 13:08:31 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:08:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa519646efa859a-HKG]
+[Sun 13:08:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa519771b6d859a-HKG]
+[Sun 13:08:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5199a0b20859a-HKG]
+[Sun 13:08:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa519dd3a615dec-HKG]
+[Sun 13:09:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:09:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51a633ef5e6a2-HKG]
+[Sun 13:09:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51a65ca61e6a2-HKG]
+[Sun 13:09:30 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51a9b9855e6a2-HKG]
+[Sun 13:09:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:09:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51ad71c10e6a2-HKG]
+[Sun 13:10:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:10:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51b6b2b1f2367-HKG]
+[Sun 13:10:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51bb9ecba0793-HKG]
+[Sun 13:10:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51bcb5f460793-HKG]
+[Sun 13:10:23 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51bea9ad40793-HKG]
+[Sun 13:10:31 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:10:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51cb728af1fc4-HKG]
+[Sun 13:11:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51cd6bc351fc4-HKG]
+[Sun 13:11:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51ce3f94c1fc4-HKG]
+[Sun 13:11:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51d299f9e078f-HKG]
+[Sun 13:11:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51d2e2d56078f-HKG]
+[Sun 13:11:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51d6cff71078f-HKG]
+[Sun 13:11:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51d750943078f-HKG]
+[Sun 13:11:31 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:11:42 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51dd7e838050b-HKG]
+[Sun 13:11:43 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51de01caa050b-HKG]
+[Sun 13:11:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51e1d5db0050b-HKG]
+[Sun 13:12:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:12:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51e6f3e7820fc-HKG]
+[Sun 13:12:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51e9df92b20fc-HKG]
+[Sun 13:12:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51eb0e80520fc-HKG]
+[Sun 13:12:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51ebf983620fc-HKG]
+[Sun 13:12:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51f0bec4f0438-HKG]
+[Sun 13:12:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:12:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa51f3d3c4a0438-HKG]
+[Sun 13:13:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:13:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa520143d3085fe-HKG]
+[Sun 13:13:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5203a5a4d85fe-HKG]
+[Sun 13:13:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:13:52 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5210488798487-HKG]
+[Sun 13:14:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:14:13 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa521891fd15df6-HKG]
+[Sun 13:14:16 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa521999ad65df6-HKG]
+[Sun 13:14:31 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:14:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa52212285384f4-HKG]
+[Sun 13:15:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa522b8acad84bd-HKG]
+[Sun 13:15:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa522d3aad084bd-HKG]
+[Sun 13:15:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa52330cfd104f4-HKG]
+[Sun 13:15:31 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:15:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5239ae9218591-HKG]
+[Sun 13:15:45 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa523c5d9118591-HKG]
+[Sun 13:15:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5240d1a4484e5-HKG]
+[Sun 13:16:01 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:16:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa524360bf984e5-HKG]
+[Sun 13:16:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:16:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa52514dc83098d-HKG]
+[Sun 13:17:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:17:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa525b7bd9d0ed8-HKG]
+[Sun 13:17:09 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa525d64da70ed8-HKG]
+[Sun 13:17:31 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:17:36 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa52672d84a0f18-HKG]
+[Sun 13:17:40 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5269329760f18-HKG]
+[Sun 13:17:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa527093fb120ff-HKG]
+[Sun 13:18:01 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:18:16 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa527741fe81fb0-HKG]
+[Sun 13:18:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:18:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5287e8b0a8594-HKG]
+[Sun 13:19:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:19:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa528ac89658594-HKG]
+[Sun 13:19:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:21:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa52bd38dbf846f-HKG]
+[Sun 13:21:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa52c233b0b8622-HKG]
+[Sun 13:21:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:22:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa52ddfad2504d7-HKG]
+[Sun 13:22:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa52de3bafc04d7-HKG]
+[Sun 13:22:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa52def7cfd04d7-HKG]
+[Sun 13:23:01 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:23:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa52e807ecf851a-HKG]
+[Sun 13:23:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:24:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa53033cd3484c3-HKG]
+[Sun 13:24:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:26:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa533bd4e905de3-HKG]
+[Sun 13:26:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa534293dc55de3-HKG]
+[Sun 13:27:01 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:27:09 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5347c5cc28601-HKG]
+[Sun 13:27:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:27:37 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5352adbd10478-HKG]
+[Sun 13:28:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:28:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa536a39f1f20e8-HKG]
+[Sun 13:28:50 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa536f41e781fbe-HKG]
+[Sun 13:29:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5372d9d501fbe-HKG]
+[Sun 13:29:01 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:33:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa53dd3f8f90450-HKG]
+[Sun 13:34:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:36:10 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa541af6bd18548-HKG]
+[Sun 13:36:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa541d168f88548-HKG]
+[Sun 13:36:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa541ee0bb18548-HKG]
+[Sun 13:36:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa541fb1af68548-HKG]
+[Sun 13:36:25 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54209e8838548-HKG]
+[Sun 13:36:31 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:36:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5424b1dee8548-HKG]
+[Sun 13:36:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa542701cfa8548-HKG]
+[Sun 13:36:47 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa542992e6e8548-HKG]
+[Sun 13:36:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa542a46b4c8548-HKG]
+[Sun 13:36:51 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa542b04f238548-HKG]
+[Sun 13:37:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:37:02 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa542f5d87685ac-HKG]
+[Sun 13:37:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa542f98f2b85ac-HKG]
+[Sun 13:37:16 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa543493f2085dd-HKG]
+[Sun 13:37:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5436b7cdc85dd-HKG]
+[Sun 13:37:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54393ca3c85dd-HKG]
+[Sun 13:37:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:37:32 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa543b29e7b85dd-HKG]
+[Sun 13:37:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa543c0a8b485dd-HKG]
+[Sun 13:37:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa543d4e98d85dd-HKG]
+[Sun 13:37:47 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5440f1b4f85dd-HKG]
+[Sun 13:37:55 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54440ca5285dd-HKG]
+[Sun 13:38:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:38:08 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa544913d7884f9-HKG]
+[Sun 13:38:19 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa544d40bec099d-HKG]
+[Sun 13:38:28 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5450d9ca6099d-HKG]
+[Sun 13:38:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:38:36 UTC] [INFO] [JOIN_MESSAGES] Inyrin is joining silently, join message will not be sent
+[Sun 13:38:44 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54570eca504ef-HKG]
+[Sun 13:38:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5458abac104ef-HKG]
+[Sun 13:38:49 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa545904a9304ef-HKG]
+[Sun 13:38:57 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa545c03b6704ef-HKG]
+[Sun 13:39:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:39:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa545ecfe7504ef-HKG]
+[Sun 13:39:09 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5460ecb0004ef-HKG]
+[Sun 13:39:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5461feba304ef-HKG]
+[Sun 13:39:17 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa546419ec104ef-HKG]
+[Sun 13:39:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5468c68766e5d-HKG]
+[Sun 13:39:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:39:41 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa546d38bbe1109-HKG]
+[Sun 13:39:56 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54734a9495dff-HKG]
+[Sun 13:40:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:40:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54765babb5dff-HKG]
+[Sun 13:40:14 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa547a4bc265dff-HKG]
+[Sun 13:40:15 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa547a9ee045dff-HKG]
+[Sun 13:40:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa547cb28855dff-HKG]
+[Sun 13:40:26 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa547eeff9e5dff-HKG]
+[Sun 13:40:31 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:40:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5482a2ba95dff-HKG]
+[Sun 13:40:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5486e6959860a-HKG]
+[Sun 13:41:01 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:41:09 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa548fceaf1b45b-HKG]
+[Sun 13:41:23 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa549568ca9108e-HKG]
+[Sun 13:41:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:41:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa549b4ac651faa-HKG]
+[Sun 13:41:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa549b7e98a1faa-HKG]
+[Sun 13:41:46 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa549e20b221faa-HKG]
+[Sun 13:41:47 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa549eb3a051faa-HKG]
+[Sun 13:41:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa549ededc91faa-HKG]
+[Sun 13:41:48 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa549f10a6c1faa-HKG]
+[Sun 13:41:57 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54a262d6c1faa-HKG]
+[Sun 13:42:01 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:42:16 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54a9c8b730429-HKG]
+[Sun 13:42:20 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54aba1f4d0429-HKG]
+[Sun 13:42:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:42:35 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54b15cbd48493-HKG]
+[Sun 13:42:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54b27ae778493-HKG]
+[Sun 13:42:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54b2fee398493-HKG]
+[Sun 13:42:58 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54ba5eb68080f-HKG]
+[Sun 13:43:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:43:05 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54bcfaeb2080f-HKG]
+[Sun 13:43:17 UTC] [INFO] [LEAVE_MESSAGES] Inyrin is leaving silently, leave message will not be sent
+[Sun 13:43:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54c57482d1057-HKG]
+[Sun 13:43:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:43:39 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54ca2ffba5e02-HKG]
+[Sun 13:43:57 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54d149c3e8541-HKG]
+[Sun 13:43:59 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54d2479b68541-HKG]
+[Sun 13:44:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:44:18 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54d96acb6079f-HKG]
+[Sun 13:44:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:45:00 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54e9d0fe65e02-HKG]
+[Sun 13:45:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:45:04 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54eb8df5b5e02-HKG]
+[Sun 13:45:27 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54f493d3d04d6-HKG]
+[Sun 13:45:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:45:42 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa54fa10b830ebe-HKG]
+[Sun 13:46:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:47:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa552d7486e1071-HKG]
+[Sun 13:48:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:48:38 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa553f22fdab472-HKG]
+[Sun 13:49:01 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5547f58b90973-HKG]
+[Sun 13:49:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:49:03 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5548cbf3b0973-HKG]
+[Sun 13:49:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa55505b84c0491-HKG]
+[Sun 13:49:31 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa5553cfe290491-HKG]
+[Sun 13:49:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:49:53 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa555c45f699b7f-HKG]
+[Sun 13:50:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:50:29 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa556a6cc852224-HKG]
+[Sun 13:50:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:50:42 UTC] [INFO] [JOIN_MESSAGES] Inyrin is joining silently, join message will not be sent
+[Sun 13:51:12 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa557b4cf418616-HKG]
+[Sun 13:51:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:54:06 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa55bf3cf17b46d-HKG]
+[Sun 13:54:16 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa55c351c33b46d-HKG]
+[Sun 13:54:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa55c5abf57b46d-HKG]
+[Sun 13:54:31 UTC] [DEBUG] [JDA] Removed 2 expired buckets
+[Sun 13:54:42 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa55cd2b9b88570-HKG]
+[Sun 13:54:44 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa55ce12b0f8570-HKG]
+[Sun 13:55:01 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:55:22 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa55dcceddb5dda-HKG]
+[Sun 13:55:31 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MinecraftToDiscordChatModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordRoleRequirementType disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordServerRequirementType disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.requirelinking.requirement.type.DiscordBoostingRequirementType disabled
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.ban.BukkitBanModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.integration.PlaceholderAPIIntegration unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.PlaceholderAPIIntegration disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.bukkit.integration.EssentialsXIntegration unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.EssentialsXIntegration disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.console.ConsoleModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.console.ConsoleModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.command.discord.DiscordCommandModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.discord.DiscordCommandModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.command.game.GameCommandModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.channel.GlobalChannelLookupModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.GlobalChannelLookupModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.discord.api.DiscordAPIEventModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.discord.api.DiscordAPIEventModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordChatMessageModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.discord.DiscordMessageMirroringModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.JoinMessageModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.JoinMessageModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.LeaveMessageModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.LeaveMessageModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.invite.DiscordInviteModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.invite.DiscordInviteModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.minecrafttodiscord.MentionCachingModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.linking.LinkingModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.presence.PresenceUpdaterModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.presence.PresenceUpdaterModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.integration.LuckPermsIntegration disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.AwardMessageModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.AwardMessageModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [EVENT_BUS] Listener com.discordsrv.common.messageforwarding.game.DeathMessageModule unsubscribed
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.DeathMessageModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StartMessageModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [JDA] Sending normal message {"op":3,"d":{"activities":[{"name":"Custom Status","state":"Stopping...","type":4}],"afk":false,"since":1722175041174,"status":"idle"}}
+[Sun 13:57:21 UTC] [DEBUG] [JDA] Received response with following cf-rays: [8aa560b8db1004fc-HKG]
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.messageforwarding.game.StopMessageModule disabled
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.bukkit.integration.VaultIntegration disabled
+[Sun 13:57:21 UTC] [DEBUG] [MODULE_MANAGER] com.discordsrv.common.channel.ChannelLockingModule disabled
+[Sun 13:57:21 UTC] [INFO] Waiting up to 10 seconds for JDA to shutdown...
+[Sun 13:57:22 UTC] [DEBUG] [JDA] Removed 1 expired buckets
+[Sun 13:57:31 UTC] [INFO] JDA failed to shutdown within the timeout, cancelling any remaining requests
+[Sun 13:57:31 UTC] [INFO] JDA shutdown completed.

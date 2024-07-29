@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 42.118.42.143
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1722235097922
+  login: 1722234718368
+money: '0'
+last-account-name: Sintune
+logoutlocation:
+  world: ca908637-9322-4a43-9bf2-9d7a3c26a257
+  world-name: world
+  x: -97.52049390266419
+  y: 65.0
+  z: -37.26018823293619
+  yaw: -110.56881713867188
+  pitch: 20.700897216796875
